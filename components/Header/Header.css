@@ -43,6 +43,8 @@
     display: flex;
     flex-direction: row;
     gap: 2rem;
+    cursor: pointer;
+    color: var(--text-color-secondary);
 }
 
 .header-links {
@@ -51,7 +53,30 @@
     align-items: center;
 }
 
-.header-links a {
+.header-links ul li a {
+    text-decoration: none;
+    color: var(--text-color-secondary);
+    position: relative;
+    transition: color .3s ease;
+    padding-bottom: 4px;
+}
+
+.header-links ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--text-color-secondary);
+    transition: width 0.3s ease;
+}
+
+.header-links ul li a:hover::after {
+    width: 100%;
+}
+
+.header-button a {
     border: 1px solid #ffffff;
     color: var(--text-color-secondary);
     padding: 8px 20px;

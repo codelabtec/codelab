@@ -16,11 +16,13 @@ const Header = () => {
                     </div>
                     <div className='header-links'>
                         <ul>
-                            <li>Serviços</li>
-                            <li>Blog</li>
-                            <li>Cases de sucesso</li>
+                            <li><a href="#">Serviços</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Cases de sucesso</a></li>
                         </ul>
-                        <a href="#">Iniciar um projeto</a>
+                        <div className='header-button'>
+                            <a href="#">Iniciar um projeto</a>
+                        </div>
                     </div>
                 </div>
                 <div className='left-squere'>
