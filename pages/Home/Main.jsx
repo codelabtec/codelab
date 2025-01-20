@@ -7,7 +7,7 @@ function Main() {
   return (
     <>
       <Header />
-      <h1>Hello, world</h1>
+      <h1>Olá, Mundo!</h1>
     </>
   )
 }
