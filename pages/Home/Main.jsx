@@ -1,4 +1,5 @@
 import Header from '../../components/Header/Header'
+import Banner from '../../components/Banner/Banner'
 import './Main.css'
 
 function Main() {
@@ -7,7 +8,7 @@ function Main() {
   return (
     <>
       <Header />
-      <h1>Olá, Mundo!</h1>
+      <Banner />
     </>
   )
 }

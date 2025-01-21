@@ -1,6 +1,7 @@
 import './Header.css';
 import GitLogo from '../../src/assets/gitlogo.svg';
 import Logo from '../../src/assets/logo.svg';
+import menuMobileIcon from '../../src/assets/menu-mobile-icon.svg';
 const Header = () => {
 
 
@@ -23,6 +24,9 @@ const Header = () => {
                         <div className='header-button'>
                             <a href="#">Iniciar um projeto</a>
                         </div>
+                    </div>
+                    <div className='menu-icon-mobile'>
+                        <img src={menuMobileIcon} alt="Ícone do menu mobile" />
                     </div>
                 </div>
                 <div className='left-squere'>

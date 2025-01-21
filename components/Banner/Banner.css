@@ -1,0 +1,62 @@
+.banner-container {
+    background-color: var(--background-color-secondary);
+    height: 568px;
+    
+    width: 100%;
+}
+
+.banner-content {
+    display: flex;
+    justify-content: space-between;
+    height: 568px;
+}
+
+.left-square {
+
+    width: 72px;
+    height: 588px;
+}
+
+.left-square-main {
+    border: 1px solid var(--border-color-primary);
+    width: 72px;
+    height: 488px;
+    
+}
+
+.left-square-secondary {
+    border: 1px solid var(--border-color-primary);
+    width: 72px;
+    height: 77px;
+    margin-top: -1px;
+}
+
+.right-square {
+    width: 72px;
+    height: 566px;
+    border: 1px solid var(--border-color-primary);
+}
+
+@media screen and (max-width: 768px) {
+
+    .left-square {
+        width: 32px;
+    }
+    
+    .left-square-secondary {
+        width: 31px;
+    }
+    
+    .left-square-main {
+        width: 31px;
+    }
+
+    .left-square-secondary {
+        width: 31px;
+    }
+    
+    .right-square {
+        width: 31px;
+    }
+    
+}
