@@ -11,7 +11,7 @@
 }
 
 .header-container {
-    max-width: 1920px;
+    max-width: 1500px;
     margin: 0 auto;
     height: 80px;
     display: flex;
@@ -29,7 +29,7 @@
 }
 
 .main-header{
-    height: 79px;
+    height: 80px;
     width: 100%;
     padding: 0px 20px;
     display: flex;
@@ -91,6 +91,18 @@
 
 .menu-icon-mobile {
     display: none;
+}
+
+@media screen and (min-width: 1500px) {
+
+    .left-square-border {
+        border-left: 1px solid var(--border-color-primary);
+    }
+
+    .right-square-border {
+        border-right: 1px solid var(--border-color-primary);
+    }
+
 }
 
 @media screen and (max-width: 768px) {

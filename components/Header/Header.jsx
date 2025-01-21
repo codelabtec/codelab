@@ -8,7 +8,7 @@ const Header = () => {
     return (
         <header className='header'>
             <section className='header-container'>
-                <div className='left-squere'>
+                <div className='left-squere left-square-border'>
                     <img src={GitLogo} alt="ícone se referindo ao github" />
                 </div>
                 <div className='main-header'>
@@ -29,7 +29,7 @@ const Header = () => {
                         <img src={menuMobileIcon} alt="Ícone do menu mobile" />
                     </div>
                 </div>
-                <div className='left-squere'>
+                <div className='left-squere right-square-border'>
                     <img src={GitLogo} alt="ícone se referindo ao github" />
                 </div>
             </section>
