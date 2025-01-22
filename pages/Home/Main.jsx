@@ -8,9 +8,15 @@ function Main() {
 
   return (
     <>
-      <Header />
-      <Banner />
-      <About />
+      <header>
+        <Header />
+      </header>
+      <main>
+        <Banner />
+      </main>
+      <section>
+        <About />
+      </section>
     </>
   )
 }

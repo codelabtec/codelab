@@ -4,9 +4,14 @@ const About = () => {
     
     return (
 
-        <section className='about-container'>
-            <div className='about-content'>
-                <h2>Sobre a CodeLab</h2>
+        <section className='company-container'>
+            <div className='company-content'>
+                <div className='company-text'>
+                    <span>SOBRE A CODELAB</span>
+                </div>
+                <div className='institutional-video'>
+                    <span>SOBRE A CODELAB</span>
+                </div>
             </div>
         </section>
     );
