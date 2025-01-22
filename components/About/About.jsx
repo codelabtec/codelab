@@ -10,7 +10,7 @@ const About = () => {
                     <span>Sobre a CodeLab</span>
                 </div>
                 <div className='institutional-video'>
-                    <span>Vídeo Institucional</span>
+                    <span>Vídeo de Apresentação</span>
                 </div>
             </div>
         </section>
