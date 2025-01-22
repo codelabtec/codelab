@@ -132,6 +132,26 @@
     display: none;
 }
 
+@media screen and (min-width: 1500px) {
+
+    .left-square-main {
+        border-left: 1px solid var(--border-color-primary);
+    }
+
+    .right-square-border {
+        border-right: 1px solid var(--border-color-primary);
+    }
+
+    .left-square-secondary {
+        border-left: 1px solid var(--border-color-primary);
+    }
+
+    .right-square {
+        border-right: 1px solid var(--border-color-primary);
+    }
+
+}
+
 @media screen and (max-width: 1020px) {
 
     .main-title h1 {
@@ -201,6 +221,14 @@
         display: block;
         width: 240px;
         left: 40px;
+    }
+
+}
+
+@media screen and (max-width: 359px) {
+
+    .main-title h1 {
+        font-size: 1.8rem;
     }
 
 }
