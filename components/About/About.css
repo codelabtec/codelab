@@ -1,11 +1,16 @@
 .about-container {
     width: 100%;
+    display: flex;
+    max-width: 100%;
+    margin-top: 142px;
 }
 
 .about-content {
     display: flex;
     justify-content: space-between;
     max-width: 1352px;
+    width: 100%;
     margin: 0 auto;
-    padding: 142px 0px;
+    padding-left: 95px;
+    
 }
