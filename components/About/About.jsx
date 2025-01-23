@@ -12,7 +12,7 @@ const About = () => {
                     <p>Somos uma agência que transforma ideias em soluções digitais únicas, unindo design criativo, tecnologia de ponta e estratégia para impulsionar marcas e alcançar resultados extraordinários.</p>
                 </div>
                 <div className='institutional-video'>
-                    <span>Vídeo de Apresentação</span>
+                    <span>Vídeo de </span>
                 </div>
             </div>
         </section>
