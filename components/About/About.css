@@ -1,15 +1,220 @@
 .company-container {
     width: 100%;
     margin: 0 auto;
-    height: 715px;
+    
     box-sizing: border-box;
+    margin-bottom: 8.875rem;
 }
 
 .company-content {
     height: 430px;
-    max-width: 1354px;
+    max-width: 1500px;
     width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    
+}
+
+.company-text {
+    max-width: 560px;
+    width: 100%;
+    padding-left: 93px;
+}
+
+.company-text span {
+    font-size: 0.875rem;
+    font-weight: 300;
+    color: var(--purple);
+    text-transform: uppercase;
+    font-family: 'Archivo', serif;
+}
+
+.company-text h2 {
+    font-family: 'Switzer', sans-serif;
+    color: var(--background-color-secondary);
+    font-size: 2.5rem;
+    line-height: 120%;
+    font-weight: 500;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: -1px;
+}
+
+.company-text p {
+    font-family: 'Archivo', serif;
+    color: var(--text-color-suport);
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 150%;
+    max-width: 550px;
+    width: 100%;
+}
+
+.institutional-video {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    padding-right: 93px;
+}
+
+.institutional-video span {
+    font-size: 0.875rem;
+    font-weight: 300;
+    color: var(--purple);
+    text-transform: uppercase;
+    font-family: 'Archivo', serif;
+}
+
+.company-values {
+    margin-top: 1.25rem;
+    display: flex;
+    max-width: 411px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.first-column-value ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.first-column-value ul li {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.first-column-value ul li span {
+    font-family: 'Archivo', serif;
+    color: var(--text-color-suport);
+    font-size: 0.875rem;
+    line-height: 150%;
+    font-weight: 500;
+    margin-top: 1.25rem;
+    letter-spacing: -1px;
+}
+
+.institutional-video .video iframe{
+    width: 591px;
+    height: 372px;
+    border-radius: 0.375rem;
+}
+
+@media screen and (min-width: 1500px) {
+
+    .company-text {
+        padding-left: 20px;
+    }
+
+}
+
+@media screen and (max-width: 1280px) {
+
+    .institutional-video .video iframe{
+        width: 591px;
+        height: 372px;
+        border-radius: 8px;
+        max-width: 100%;
+        max-height: 100%;
+        min-width: 400px;
+    }
+
+    .company-content {
+        gap: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 1090px) {
+
+    .company-content {
+        flex-direction: column;
+    }
+
+    .institutional-video{
+        padding-left: 93px;
+    }
+
+    .institutional-video .video iframe{
+        width: 100%;
+        height: 372px;
+        border-radius: 8px;
+        max-width: 100%;
+        max-height: 100%;
+        min-width: 400px;
+    }
+
+    .company-text {
+        max-width: 100%;
+        padding-left: 93px;
+        padding-right: 93px;
+    }
+    
+    .company-text h2 {
+        font-family: 'Switzer', sans-serif;
+        color: var(--background-color-secondary);
+        font-size: 2.5rem;
+        line-height: 120%;
+        font-weight: 500;
+        margin-top: 2.5rem;
+        margin-bottom: 1rem;
+        letter-spacing: -1px;
+    }
+    
+    .company-text p {
+        font-family: 'Archivo', serif;
+        color: var(--text-color-suport);
+        font-size: 1rem;
+        font-weight: 300;
+        line-height: 150%;
+        max-width: 100%;
+        
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+
+    .company-text {
+        max-width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .institutional-video {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .company-text h2 {
+        font-size: 32px;
+    }
+
+    .institutional-video .video iframe{
+        width: 100%;
+        height: 300px;
+        border-radius: 8px;
+        max-width: 100%;
+        max-height: 100%;
+        min-width: 250px;
+    }
+
+  
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .company-values {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
 }

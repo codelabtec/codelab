@@ -31,7 +31,7 @@
 .left-square-secondary {
     border: 1px solid var(--border-color-primary);
     width: 73px;
-    height: 77px;
+    height: 80px;
     margin-top: -1px;
     border-left: none;
     display: flex;
@@ -41,7 +41,7 @@
 
 .right-square {
     min-width: 4.5625rem;
-    height: 566px;
+    height: 568px;
     border: 1px solid var(--border-color-primary);
     border-right: none;
 }
