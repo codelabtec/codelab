@@ -5,7 +5,9 @@ const Cases = () => {
     return (
 
         <section className='cases-container'>
-            <h2>Cases</h2>
+            <div className='cases-content'>
+                <h2>Cases</h2>
+            </div>
         </section>
 
     );

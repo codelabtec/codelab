@@ -1,6 +1,7 @@
 import Header from '../../components/Header/Header';
 import Banner from '../../components/Banner/Banner';
 import About from '../../components/About/About';
+import Cases from '../../components/Cases/Cases';
 import './Main.css'
 
 function Main() {
@@ -8,14 +9,17 @@ function Main() {
 
   return (
     <>
-      <header>
+      <header className='header'>
         <Header />
       </header>
-      <main>
+      <main className='banner'>
         <Banner />
       </main>
-      <section>
+      <section className='about'>
         <About />
+      </section>
+      <section className='cases'>
+        <Cases />
       </section>
     </>
   )

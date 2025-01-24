@@ -1,0 +1,9 @@
+.cases-container {
+    
+    margin: 142px 0px;
+    background-color: var(--background-color-secondary);
+    background-image: url('../../src/assets/cases-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
