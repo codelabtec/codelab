@@ -1,12 +1,10 @@
 .company-container {
     width: 100%;
     margin: 0 auto;
-    
     box-sizing: border-box;
 }
 
 .company-content {
-    height: 430px;
     max-width: 1500px;
     width: 100%;
     margin: 0 auto;
@@ -129,9 +127,7 @@
 
 @media screen and (max-width: 1090px) {
 
-    .company-container {
-        padding-bottom: 300px;
-    }
+   
 
     .company-content {
         flex-direction: column;
@@ -209,14 +205,11 @@
         min-width: 250px;
     }
 
-   
-
     .company-content {
         flex-direction: column;
-        margin-bottom: 250px;
+        /* margin-bottom: 250px; */
+        gap: 2.5rem;
     }
-
-  
 
 }
 
