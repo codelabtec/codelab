@@ -1,0 +1,21 @@
+<svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.5">
+<mask id="mask0_671_2267" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="500" height="500">
+<rect width="499.5" height="499.5" transform="translate(0.250122)" fill="url(#paint0_radial_671_2267)"/>
+</mask>
+<g mask="url(#mask0_671_2267)">
+<rect x="165.775" y="196.094" width="141.228" height="141.228" rx="17.096" transform="rotate(-12.5 165.775 196.094)" stroke="white" stroke-width="1.48661"/>
+<rect x="123.221" y="168.983" width="212.585" height="212.585" rx="17.096" transform="rotate(-12.5 123.221 168.983)" stroke="white" stroke-width="1.48661"/>
+<rect x="80.6672" y="141.872" width="283.942" height="283.942" rx="17.096" transform="rotate(-12.5 80.6672 141.872)" stroke="white" stroke-width="1.48661"/>
+<rect x="38.1146" y="114.76" width="355.299" height="355.299" rx="17.096" transform="rotate(-12.5 38.1146 114.76)" stroke="white" stroke-width="1.48661"/>
+<rect x="-4.43961" y="87.6492" width="426.656" height="426.656" rx="17.096" transform="rotate(-12.5 -4.43961 87.6492)" stroke="white" stroke-width="1.48661"/>
+<rect x="-46.9937" y="60.5379" width="498.013" height="498.013" rx="17.096" transform="rotate(-12.5 -46.9937 60.5379)" stroke="white" stroke-width="1.48661"/>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_671_2267" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(249.75 249.75) rotate(90) scale(249.75 249.75)">
+<stop/>
+<stop offset="1" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>

@@ -1,4 +1,6 @@
 import './Cases.css';
+import ProjectCard from '../../components/ProjectCard/ProjectCard';
+import AzeitonaLogo from '../../src/assets/logo-card.svg';
 
 const Cases = () => {
 
@@ -15,6 +17,16 @@ const Cases = () => {
                         <span></span>
                         <p>Somos uma agência que transforma ideias em soluções digitais únicas, unindo design criativo, tecnologia de ponta e estratégia para impulsionar marcas e alcançar resultados extraordinários.</p>
                     </div>
+                </div>
+                <div className='cases-cards'>
+                        <ProjectCard
+                            logo={AzeitonaLogo}
+                            title='Nome do segundo projeto'
+                            description='Descrição do segundo projeto'
+                            background='#A803A8'
+                        />
+                        <ProjectCard />
+
                 </div>
             </div>
         </section>

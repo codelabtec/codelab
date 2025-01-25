@@ -175,6 +175,14 @@
     
 }
 
+@media screen and (max-width: 1030px) {
+
+    .company-text h2 {
+        font-size: 1.75rem !important;
+    }
+
+}
+
 @media screen and (max-width: 768px) {
 
     .company-text {
@@ -211,8 +219,9 @@
         gap: 2.5rem;
     }
 
-    
-
+    .company-values {
+        max-width: 100%;
+    }
 }
 
 @media screen and (max-width: 405px) {
