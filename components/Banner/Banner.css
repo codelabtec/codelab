@@ -3,7 +3,6 @@
     height: 568px;
     width: 100%;
     margin-bottom: 142px;
-    
 }
 
 .banner-content {
@@ -154,6 +153,14 @@
 
 }
 
+@media screen and (max-width: 1090px) {
+
+    .banner-container {
+        margin-bottom: 80px;
+    }
+    
+}
+
 @media screen and (max-width: 1020px) {
 
     .main-title h1 {
@@ -215,6 +222,14 @@
         min-width: 2rem;
     }
     
+}
+
+@media screen and (max-width: 500px) {
+
+    .banner-container {
+        margin-bottom: 3rem;
+    }
+
 }
 
 @media screen and (max-width: 450px) {

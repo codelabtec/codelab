@@ -103,7 +103,7 @@
 @media screen and (min-width: 1500px) {
 
     .company-text {
-        padding-left: 20px;
+        padding-left: 93px;
     }
 
 }
@@ -131,7 +131,7 @@
 
     .company-content {
         flex-direction: column;
-        margin-bottom: 142px;
+        margin-bottom: 5rem;
     }
 
     .institutional-video{
@@ -207,13 +207,15 @@
 
     .company-content {
         flex-direction: column;
-        /* margin-bottom: 250px; */
+        margin-bottom: 3rem;
         gap: 2.5rem;
     }
 
+    
+
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 405px) {
 
     .company-values {
         flex-direction: column;
