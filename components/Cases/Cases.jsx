@@ -1,6 +1,7 @@
 import './Cases.css';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
 import AzeitonaLogo from '../../src/assets/logo-card.svg';
+import Thumbnail from '../../src/assets/thumbnail.png';
 
 const Cases = () => {
 
@@ -22,8 +23,11 @@ const Cases = () => {
                         <ProjectCard
                             logo={AzeitonaLogo}
                             title='Nome do segundo projeto'
-                            description='Descrição do segundo projeto'
+                            description='Site e aplicativo.'
                             background='#A803A8'
+                            tag1='UX Design'
+                            tag2='UI Design'
+                            thumbnail={Thumbnail}
                         />
                         <ProjectCard />
 
