@@ -80,6 +80,10 @@
     color: var(--text-color-secondary);
     display: flex;
     gap: 1.5rem;
+    overflow-x: auto;
+    gap: 1.5rem;
+    -webkit-overflow-scrolling: touch; 
+    scrollbar-width: none;   
 }
 
 @media screen and (max-width: 1120px) {
@@ -150,7 +154,6 @@
     }
 
     .cases-cards {
-        white-space: nowrap;
         overflow-x: auto;
         gap: 1.5rem;
         -webkit-overflow-scrolling: touch; 
@@ -166,7 +169,7 @@
 @media screen and (max-width: 530px) {
     
     .cases-container {
-        height: 872px;
+        height: 990px;
     }
     
 }
@@ -186,15 +189,12 @@
     }
 
     .cases-container {
-        height: 1013px;
+        height: 1060px;
     }
     
     .cases-content {
-    
         height: 100%;
-        
     }
-    
     
 }
 

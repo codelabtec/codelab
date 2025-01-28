@@ -2,6 +2,7 @@ import './Cases.css';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
 import AzeitonaLogo from '../../src/assets/logo-card.svg';
 import Thumbnail from '../../src/assets/thumbnail.png';
+// import IllustrationBackground from '../../src/assets/background.svg';
 
 const Cases = () => {
 
@@ -22,14 +23,19 @@ const Cases = () => {
                 <div className='cases-cards'>
                         <ProjectCard
                             logo={AzeitonaLogo}
-                            title='Nome do segundo projeto'
-                            description='Site e aplicativo.'
+                            description='Site e aplicativo de descontos e promoções que revoluciona a forma como os usuários economizam em suas compras diárias. O projeto foi construído com foco em uma experiência do usuário intuitiva e eficiente, implementando uma interface moderna e amigável.'
                             background='#A803A8'
                             tag1='UX Design'
                             tag2='UI Design'
                             thumbnail={Thumbnail}
+                            // illustrationBackground={IllustrationBackground}
                         />
-                        <ProjectCard />
+                        <ProjectCard 
+                            background='#6B7457' 
+                        />
+                        <ProjectCard 
+                            background='#181918'
+                        />
 
                 </div>
             </div>

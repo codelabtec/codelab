@@ -10,6 +10,7 @@ const ProjectCard = ({
     tag2,
     background = "#f7f7f7",
     thumbnail,
+    // illustrationBackground,
 }) => {
 
     const styles = {
@@ -31,6 +32,7 @@ const ProjectCard = ({
             </div>
             <div className='project-thumbnail'>
                 {thumbnail && <img src={thumbnail} alt="Imagem do projeto" />}
+                {/* {illustrationBackground && <img src={illustrationBackground} alt="Imagem do projeto" />} */}
             </div>
         </div>
     );
@@ -44,6 +46,7 @@ ProjectCard.propTypes = {
     tag1: PropTypes.string,
     tag2: PropTypes.string,
     thumbnail: PropTypes.string,
+    // illustrationBackground: PropTypes.string,
 };
 
 
