@@ -191,11 +191,11 @@
 @media screen and (max-width: 530px) {
     
     .cases-container {
-        min-height: 990px;
+        min-height: 1070px;
     }
 
     .cases-content {
-        height: 990px;
+        height: 1070px;
     }
 
     .horizontal-scroll-wrapper {

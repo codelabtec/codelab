@@ -93,6 +93,8 @@
         min-width: 290px;
         height: 545px;
         width: 100%;
+        position: relative;
+        
     }
 
     .project-thumbnail img {
@@ -101,6 +103,8 @@
         object-fit: contain;
         object-position: center right;
         overflow: hidden; 
+        position: absolute;
+        bottom: 0;
     }
 }
 
