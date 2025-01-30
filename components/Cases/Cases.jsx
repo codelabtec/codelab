@@ -15,7 +15,7 @@ gsap.registerPlugin(ScrollTrigger);
 const Cases = () => {
 
     // Referência para a <section> que será pinada
-  const sectionRef = useRef(null);
+  const containerRef = useRef(null);
   // Referência para o wrapper que contém os cards
   const wrapperRef = useRef(null);
 
@@ -27,10 +27,10 @@ const Cases = () => {
       }
 
     // Evita erro caso refs não existam (renderizações rápidas)
-    if (!sectionRef.current || !wrapperRef.current) return;
+    if (!containerRef.current || !wrapperRef.current) return;
 
     // Quando o componente monta, configuramos a animação
-    const sectionEl = sectionRef.current;
+    const sectionEl = containerRef.current;
     const wrapperEl = wrapperRef.current;
 
     // Calcular a largura total
@@ -49,7 +49,7 @@ const Cases = () => {
       scrollTrigger: {
         trigger: sectionEl,     // Elemento que "dispara" a animação
         start: 'top top',       // Quando a <section> encostar no topo da tela
-        end: `+=${(wrapperEl.scrollWidth - sectionEl.offsetWidth) + 64}`, // o fim do scroll se estende pela largura total
+        end: `+=${baseScrollWidth + 24}`, // o fim do scroll se estende pela largura total
         scrub: 1,               // A animação acompanha o scroll ("arrastada")
         pin: true,              // "Gruda" a seção enquanto rola horizontalmente
         invalidateOnRefresh: true, // Recalcula tudo em caso de resize
@@ -65,8 +65,8 @@ const Cases = () => {
 
     return (
 
-        <section className='cases-container' ref={sectionRef}>
-            <div className='cases-content' ref={sectionRef}>
+        <section className='cases-container' >
+            <div className='cases-content' ref={containerRef}>
                 <div className='cases-text'>
                     <div className='cases-title'>
                         <span>NOSSOS CASES</span>
@@ -113,6 +113,7 @@ const Cases = () => {
                                 tag2='UX Design'
                                 thumbnail={X10Thumb}
                             />
+                           
                         </div>
                 </div>
             </div>

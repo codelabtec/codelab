@@ -2,8 +2,8 @@ import './Header.css';
 import GitLogo from '../../src/assets/gitlogo.svg';
 import Logo from '../../src/assets/logo.svg';
 import menuMobileIcon from '../../src/assets/menu-mobile-icon.svg';
-const Header = () => {
 
+const Header = () => {
 
     return (
         <header className='header'>
