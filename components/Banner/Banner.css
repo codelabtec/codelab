@@ -65,6 +65,7 @@
     padding-top: 5rem;
     padding-left: 1.25rem;
     position: relative;
+    z-index: 1;
 }
 
 .main-title h1 {
@@ -73,6 +74,7 @@
     font-size: 3rem;
     font-weight: 500;
     line-height: 120%;
+    z-index: 1;
     
 }
 
@@ -84,6 +86,7 @@
     line-height: 150%;
     max-width: 508px;
     width: 100%;
+    z-index: 1;
 }
 
 .main-title a {
@@ -102,6 +105,7 @@
     line-height: 150%;
     font-family: 'Switzer', sans-serif;
     z-index: 1;
+    
 }
 
 .illustration {
