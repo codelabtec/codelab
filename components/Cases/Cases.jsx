@@ -24,7 +24,7 @@ const Cases = () => {
     // Se a tela for menor que 535px, não ativa o scroll horizontal do GSAP.
     if (window.innerWidth < 530) {
         return; 
-      }
+    }
 
     // Evita erro caso refs não existam (renderizações rápidas)
     if (!containerRef.current || !wrapperRef.current) return;

@@ -1,3 +1,26 @@
 .feedbacks-container {
-    height: 1000px;
+    width: 100%;
+    margin: 0px 0px;
+}
+
+.feedbacks-content {
+    display: flex;
+    max-width: 1500px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 1rem 5.8125rem;
+    margin-bottom: 5.875rem;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .feedbacks-content {
+        padding: 1rem 1.25rem;
+    }
+
+    .feedbacks-container {
+        margin: 1rem 0px;
+    }
+    
+    
 }
