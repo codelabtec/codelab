@@ -5,12 +5,90 @@
 
 .feedbacks-content {
     display: flex;
+    flex-direction: column;
     max-width: 1500px;
     margin: 0 auto;
     width: 100%;
     padding: 1rem 5.8125rem;
     margin-bottom: 5.875rem;
 }
+
+.feedbacks-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.cards {
+    max-width: 100%;
+    width: 100%;
+    border: 1px solid #E9EAEB;
+    border-radius: 0.75rem;
+    padding: 32px;
+    min-height: 256px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cards p {
+    font-size: 1.25rem;
+    line-height: 130%;
+    color: var(--background-color-secondary);
+    font-family: 'Switzer', sans-serif;
+    font-weight: 500;
+}
+
+.feedbacks-author {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.verified {
+    display: flex;
+    gap: 0.25rem;
+    align-items: center;
+}
+
+.verified p {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 150%;
+    font-family: 'Archivo', serif;
+}
+
+.feedbacks-author-avatar {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.feedbacks-author-info span {
+    color: #535862;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 150%;
+
+}
+
+.company-logo {
+    align-self: flex-end;
+}
+
+.company-logo img {
+    width: 144px;
+}
+
+@media screen and (max-width: 1130px) {
+    
+    .feedbacks-cards {
+        display: flex;
+        justify-content: space-between;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+    }
+    
+} 
 
 @media screen and (max-width: 768px) {
     
@@ -21,6 +99,35 @@
     .feedbacks-container {
         margin: 1rem 0px;
     }
+     
+}
+
+@media screen and (max-width: 500px) {
     
+    .feedbacks-author {
+        padding-top: 24px;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .company-logo {
+        align-self: flex-start;
+    }
+
+    .cards {    
+        padding: 24px;
+    }
+
+    .cards p {
+        font-size: 1.125rem;
+    }
+
+    .verified p {
+        font-size: 0.875rem;
+        font-weight: 600;
+        line-height: 150%;
+        font-family: 'Archivo', serif;
+    }
     
+     
 }

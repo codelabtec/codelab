@@ -28,5 +28,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+svg {
+  shape-rendering: crispEdges;
+  transform: translateZ(0); /* Força aceleração de hardware */
+}
 
 
