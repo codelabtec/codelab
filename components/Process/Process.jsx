@@ -24,6 +24,11 @@ const Process = () => {
                         <h3>Discovery</h3>
                         <p>Web Design AgencyWeb Design AgencyWeb Design AgencyWeb Design AgencyWeb Design.</p>
                     </div>
+                    <div className='lottie-animation-container'>
+                            <div className='lottie-animation'>
+                                <h1>Olá</h1>
+                            </div>
+                    </div>
                     <div className='process-step-button'>
                         <h3>Discovery</h3>
                         <p>Web Design AgencyWeb Design AgencyWeb Design AgencyWeb Design AgencyWeb Design.</p>

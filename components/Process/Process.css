@@ -9,6 +9,7 @@
     background-size: cover;
     background-position: center;
     color: var(--text-color-secondary);
+
 }
 
 .process-content {
@@ -19,6 +20,7 @@
     width: 100%;
     padding: 6.5rem 5.8125rem;
     margin-bottom: 5.875rem;
+    gap: 3rem;
 }
 
 .cases-text {
@@ -47,7 +49,12 @@
     border-radius: 1rem;
     padding: 1.25rem;
     max-width: 500px;
+    min-width: 430px;
     width: 100%;
+}
+
+.process-step-text .lottie-animation-container {
+    display: none;
 }
 
 .lottie-animation-container {
@@ -56,4 +63,99 @@
     width: 100%;
     border-radius: 12.538px;
     background-color: #ffffff;
+}
+
+@media screen and (max-width: 1179px) {
+
+    .process-step-button {
+        border-radius: 1rem;
+        padding: 1.25rem;
+        min-width: 400px;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 1090px) {
+
+    .process-step-button {
+        border-radius: 1rem;
+        padding: 1.25rem;
+        min-width: 350px;
+        width: 100%;
+    }
+
+    .lottie-animation-container {
+        max-width: 634px;
+        min-height: 573px;
+        width: 100%;
+        border-radius: 12.538px;
+        background-color: #ffffff;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    .process-step-text .lottie-animation-container {
+        display: flex;
+    }
+
+    .lottie-animation-container {
+        display: none;
+    }
+
+    .process-step-button {
+        border-radius: 1rem;
+        padding: 1.25rem;
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    .lottie-animation-container {
+        max-width: 100%;
+        min-height: 573px;
+        width: 100%;
+        border-radius: 12.538px;
+        background-color: #ffffff;
+        margin-bottom: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .process-content {
+        display: flex;
+        flex-direction: column;
+        max-width: 1500px;
+        margin: 0 auto;
+        width: 100%;
+        padding: 6.5rem 1.25rem;
+        margin-bottom: 5.875rem;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    .process-step-button {
+        border-radius: 1rem;
+        padding: 1.25rem;
+        min-width: 230px;
+        width: 100%;
+    }
+
+    .process-steps-container {
+        padding: 1.25rem;
+    }
+
+    .process-content {
+        gap: 4rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .process-content {
+        gap: 7.5rem;
+    }
 }
