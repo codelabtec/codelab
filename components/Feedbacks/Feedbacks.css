@@ -1,6 +1,7 @@
 .feedbacks-container {
     width: 100%;
     margin: 0px 0px;
+    padding-top: 93px;
 }
 
 .feedbacks-content {
@@ -11,6 +12,7 @@
     width: 100%;
     padding: 1rem 5.8125rem;
     margin-bottom: 5.875rem;
+    gap: 3rem;
 }
 
 .feedbacks-cards {

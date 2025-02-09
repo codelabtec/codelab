@@ -10,7 +10,8 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    
+    padding-bottom: 5.8125rem;
+    padding-top: 5.8125rem;
 }
 
 .company-text {

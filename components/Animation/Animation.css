@@ -1,0 +1,43 @@
+.animation-container {
+    width: 100%;
+    height: 141px;
+    background-color: var(--purple);
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+}
+
+.animation-content {
+    display: flex;
+    white-space: nowrap;
+    width: fit-content;
+    animation: animation-text 25s linear infinite;
+    gap: 1.5rem;
+}
+
+.animation-text {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 2.5rem;
+    color: var(--text-color-secondary);
+    margin: 0;
+    padding: 0;
+    font-family: 'Archivo', serif;
+    font-weight: 500;
+}
+
+@keyframes animation-text {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      /* A ideia é que ao final do tempo a gente tenha transladado 
+         exatamente o tamanho do primeiro bloco para que a transição seja suave. 
+         Exemplo: Se cada bloco tiver ~100% (ou algo) da tela, use -50% ou -100% 
+         dependendo de quantas cópias. Aqui vamos usar -50% se quisermos
+         duas cópias que se encaixam perfeitamente. */
+      transform: translateX(-50%);
+    }
+  }

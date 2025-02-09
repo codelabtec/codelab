@@ -2,7 +2,7 @@
     background-color: var(--background-color-secondary);
     height: 568px;
     width: 100%;
-    margin-bottom: 142px;
+    /* margin-bottom: 142px; */
 }
 
 .banner-content {

@@ -4,6 +4,7 @@ import About from '../../components/About/About';
 import Cases from '../../components/Cases/Cases';
 import Feedbacks from '../../components/Feedbacks/Feedbacks';
 import Process from '../../components/Process/Process.jsx';
+import Animation from '../../components/Animation/Animation.jsx';
 import './Main.css'
 
 function Main() {
@@ -28,6 +29,9 @@ function Main() {
       </section>
       <section className='process'>
         <Process />
+      </section>
+      <section className='animation'>
+        <Animation />
       </section>
     </>
   )
