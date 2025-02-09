@@ -3,6 +3,7 @@ import Banner from '../../components/Banner/Banner';
 import About from '../../components/About/About';
 import Cases from '../../components/Cases/Cases';
 import Feedbacks from '../../components/Feedbacks/Feedbacks';
+import Process from '../../components/Process/Process.jsx';
 import './Main.css'
 
 function Main() {
@@ -24,6 +25,9 @@ function Main() {
       </section>
       <section className='feedbacks'>
         <Feedbacks />
+      </section>
+      <section className='process'>
+        <Process />
       </section>
     </>
   )

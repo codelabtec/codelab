@@ -16,6 +16,7 @@ const SmoothScrollProvider = ({ children }) => {
       smooth: true, // Habilita o smooth scroll
       smoothTouch: false, // Habilita o smooth scroll em dispositivos touch
       touchMultiplier: 2, // Multiplicador para gestos touch
+      wheelMultiplier: 1.2,
       // Outras opções conforme a documentação
     });
 

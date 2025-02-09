@@ -1,0 +1,59 @@
+.process-container {
+    width: 100%;
+    margin: 0px;
+    min-height: 813px;
+    height: 100%;
+    background-color: var(--background-color-secondary);
+    background-image: url('../../src/assets/cases-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: var(--text-color-secondary);
+}
+
+.process-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 1500px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 6.5rem 5.8125rem;
+    margin-bottom: 5.875rem;
+}
+
+.cases-text {
+    margin-bottom: 3rem;
+}
+
+.process-steps-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 100%;
+    min-height: 573px;
+    padding: 2.5rem;
+    border-radius: 24.727px;
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    background: rgba(255, 255, 255, 0.30);
+    backdrop-filter: blur(18.545454025268555px);
+}
+
+.process-step-button:first-child {
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    background: rgba(255, 255, 255, 0.30);
+}
+
+.process-step-button {
+    border-radius: 1rem;
+    padding: 1.25rem;
+    max-width: 500px;
+    width: 100%;
+}
+
+.lottie-animation-container {
+    max-width: 634px;
+    height: 489px;
+    width: 100%;
+    border-radius: 12.538px;
+    background-color: #ffffff;
+}
