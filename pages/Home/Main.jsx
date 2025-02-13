@@ -6,6 +6,7 @@ import Feedbacks from '../../components/Feedbacks/Feedbacks';
 import Process from '../../components/Process/Process.jsx';
 import Animation from '../../components/Animation/Animation.jsx';
 import Newsletter from '../../components/Newsletter/Newsletter.jsx';
+import Footer from '../../components/Footer/Footer.jsx';
 import './Main.css'
 
 function Main() {
@@ -36,6 +37,9 @@ function Main() {
       </section>
       <section className='newsletter'>
         <Newsletter />
+      </section>
+      <section>
+        <Footer />
       </section>
     </>
   )
