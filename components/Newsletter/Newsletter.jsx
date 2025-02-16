@@ -9,7 +9,7 @@ const Newsletter = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:5001/api/subscribe',
+            const response = await axios.post('https://codelabbackend-g2nh.onrender.com/api/subscribe',
             { email },
             {
                 headers: {
