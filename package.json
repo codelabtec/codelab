@@ -11,6 +11,10 @@
   },
   "dependencies": {
     "@studio-freight/lenis": "^1.0.42",
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
     "gsap": "^3.12.7",
     "gsap-trial": "^3.12.7",
     "react": "^19.0.0",
