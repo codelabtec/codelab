@@ -22,7 +22,7 @@ const Newsletter = () => {
         } catch (error) {
             const errorMessage = error.response?.data?.message || 'Erro ao realizar inscrição!';
             const brevoMessage = error.response?.data?.error?.message;
-            setStatus(`Erro: ${errorMessage || brevoMessage || 'Falha na conexão'}`);
+            setStatus(`Erro: ${errorMessage || brevoMessage || 'Falha na comunição com a Brevo'}`);
         }
     };
 
