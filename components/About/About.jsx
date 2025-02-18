@@ -1,5 +1,6 @@
 import './About.css';
 import Check from '../../src/assets/check.svg';
+import Gif from '../../src/assets/SceneReduzida.gif';
 
 const About = () => {
     
@@ -59,7 +60,7 @@ const About = () => {
                 <div className='institutional-video'>
                     <span>Vídeo de Apresentacao</span>
                     <div className='video'>
-                        <iframe src="../../src/assets/SceneReduzida.gif" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                        <iframe src={Gif} title="Apresentacao" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </div>
                 </div>
             </div>
