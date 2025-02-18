@@ -12,7 +12,7 @@ const Header = () => {
 
     function toggleMenu() {
         setIsOpen(!isOpen);
-        console.log(isOpen);
+        // console.log(isOpen);
     }
 
     return (
