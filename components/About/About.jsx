@@ -59,7 +59,7 @@ const About = () => {
                 <div className='institutional-video'>
                     <span>Vídeo de Apresentacao</span>
                     <div className='video'>
-                        <iframe src="https://www.youtube.com/embed/5qap5aO4i9A" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                        <iframe src="../../src/assets/SceneReduzida.gif" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </div>
                 </div>
             </div>
