@@ -37,7 +37,7 @@ const Cases = () => {
     const baseScrollWidth = wrapperEl.scrollWidth - sectionEl.offsetWidth;
 
      // Adicionar manualmente ~24px se tiver gap de 1.5rem:
-    const extraGap = 200; 
+    const extraGap = 150; 
     const totalScrollWidth = baseScrollWidth + extraGap;
 
     if (totalScrollWidth <= 0) return;
@@ -96,14 +96,6 @@ const Cases = () => {
                                 tag2='Site'
                                 thumbnail={MilojaThumb}
 
-                            />
-                            <ProjectCard 
-                                logo={X10Logo}
-                                description="Plataforma personalizada de apostas esportivas, desenvolvida para atender casas de apostas em crescimento."
-                                background='#181918'
-                                tag1='UI Design'
-                                tag2='UX Design'
-                                thumbnail={X10Thumb}
                             />
                             <ProjectCard 
                                 logo={X10Logo}

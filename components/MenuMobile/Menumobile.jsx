@@ -22,7 +22,7 @@ const MenuMobile = ({isOpen, toggleMenu}) => {
                         </ul>
                     </div>
                     <div className='menu-mobile-button'>
-                            <a href="#">Iniciar um projeto</a>
+                    <a href="https://wa.me/5522992877496?text=Olá!%20Vim%20através%20do%20site%20e%20gostaria%20de%20mais%20informações." target='_blank' rel="noopener noreferrer">Iniciar um projeto</a>
                     </div>
                 </div>
             </section>

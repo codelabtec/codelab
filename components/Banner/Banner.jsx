@@ -5,6 +5,7 @@ import Vector from '../../src/assets/illustration.svg';
 import FacebookLogo from '../../src/assets/facebook-logo.svg';
 import InstagramLogo from '../../src/assets/instagram-logo.svg';
 import LinkedinLogo from '../../src/assets/linkedin-icon.svg';
+// import { Link } from 'react-router-dom';
 
 const Banner = () => {
 
@@ -23,8 +24,8 @@ const Banner = () => {
                     <div className='main-title'>
                         <h1>Designs que fascinam, tecnologias digitais que transformam.</h1>
                         <p>Transformamos ideias em realidade digital através de designs inspiradores e interfaces intuitivas que conectam pessoas e impulsionam negócios.</p>
-                        <a href="https://wa.me/5522992877496?text=Olá!%20Vim%20através%20do%20site%20e%20gostaria%20de%20mais%20informações.">Iniciar um projeto</a>
-
+                        {/* <Link className='button-contact' to="/contact">Iniciar um projeto</Link> */}
+                        <a href="https://wa.me/5522992877496?text=Olá!%20Vim%20através%20do%20site%20e%20gostaria%20de%20mais%20informações." target='_blank' rel="noopener noreferrer">Iniciar um projeto</a>
                         <div className='mobile-background'>
                             <img src={bannerIllustration} alt="Background em gradiente" />
                         </div>
