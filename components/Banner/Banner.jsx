@@ -32,15 +32,15 @@ const Banner = () => {
                         <div className='social-media-links'>
                                 <div className='icons'>
                                     <img src={FacebookLogo} alt="Logo do facebook" />
-                                    <a href="https://www.facebook.com/">Facebook</a>
+                                    <a href="https://www.facebook.com/" target='_blank' rel='noopener noreferrer'>Facebook</a>
                                 </div>
                                 <div className='icons'>
                                     <img src={InstagramLogo} alt="Logo do instagram" />
-                                    <a href="https://www.instagram.com/codelabtec/">Instagram</a>
+                                    <a href="https://www.instagram.com/codelabtec/" target='_blank' rel='noopener noreferrer'>Instagram</a>
                                 </div>
                                 <div className='icons linkedin-icon'>
                                     <img src={LinkedinLogo} alt="Logo do linkedin" />
-                                    <a href="https://www.linkedin.com/">Linkedin</a>
+                                    <a href="https://www.linkedin.com/" target='_blank' rel='noopener noreferrer'>Linkedin</a>
                                 </div>
                         </div>
                     </div>

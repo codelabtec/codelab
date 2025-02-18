@@ -1,14 +1,13 @@
 .banner-container {
     background-color: var(--background-color-secondary);
-    height: 568px;
+    height: 668px;
     width: 100%;
-    /* margin-bottom: 142px; */
 }
 
 .banner-content {
     display: flex;
     justify-content: space-between;
-    height: 568px;
+    height: 668px;
     max-width: 1500px;
     margin: 0 auto;
 }
@@ -16,13 +15,13 @@
 .left-square {
 
     width: 73px;
-    height: 588px;
+    height: 688px;
 }
 
 .left-square-main {
     border: 1px solid var(--border-color-primary);
     width: 100%;
-    height: 488px;
+    height: 588px;
     border-left: none;
     
 }
@@ -40,7 +39,7 @@
 
 .right-square {
     min-width: 4.5625rem;
-    height: 568px;
+    height: 668px;
     border: 1px solid var(--border-color-primary);
     border-right: none;
 }
@@ -62,10 +61,10 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding-top: 5rem;
+    padding-top: 9rem;
     padding-left: 1.25rem;
     position: relative;
-    z-index: 4;
+    /* z-index: 4; */
 }
 
 .main-title h1 {
@@ -74,7 +73,7 @@
     font-size: 3rem;
     font-weight: 500;
     line-height: 120%;
-    z-index: 4;
+    /* z-index: 4; */
     
 }
 
@@ -86,7 +85,7 @@
     line-height: 150%;
     max-width: 508px;
     width: 100%;
-    z-index: 4;
+    /* z-index: 4; */
 }
 
 .button-contact {
@@ -104,7 +103,7 @@
     font-weight: 400;
     line-height: 150%;
     font-family: 'Switzer', sans-serif;
-    z-index: 1; 
+    /* z-index: 1;  */
 }
 
 .main-title a {
@@ -122,7 +121,7 @@
     font-weight: 400;
     line-height: 150%;
     font-family: 'Switzer', sans-serif;
-    z-index: 1; 
+    /* z-index: 1;  */
 }
 
 .illustration {
@@ -131,7 +130,7 @@
     justify-content: start;
     align-items: start;
     max-height: 400px;
-    padding-top: 50px;
+    padding-top: 130px;
 }
 
 .illustration {

@@ -70,11 +70,11 @@ const Cases = () => {
                 <div className='cases-text'>
                     <div className='cases-title'>
                         <span>NOSSOS CASES</span>
-                        <h2>Estratégia, design e tecnologia para negócios vencedores.</h2>
+                        <h2>Transformando visões em experiências digitais incríveis.</h2>
                     </div>
                     <div className='cases-text-support'>
                         <span></span>
-                        <p>Somos uma agência que transforma ideias em soluções digitais únicas, unindo design criativo, tecnologia de ponta e estratégia para impulsionar marcas e alcançar resultados extraordinários.</p>
+                        <p>Do conceito à entrega, cada projeto representa nossa expertise em desenvolvimento e design. Confira nosso portfólio de sites e sistemas que revolucionaram a presença digital de nossos clientes e superaram expectativas.</p>
                     </div>
                 </div>
                 <div className='cases-cards'>
