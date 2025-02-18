@@ -117,6 +117,15 @@
     padding-top: 50px;
 }
 
+.illustration {
+    transition: transform 0.3s ease-in-out;
+}
+
+.illustration:hover {
+    transform: scale(1.05) rotate(3deg);
+}
+
+
 .illustration img {
     width: 650px;
     width: 100%;
@@ -305,3 +314,5 @@
     }
 
 }
+
+

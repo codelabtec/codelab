@@ -1,8 +1,9 @@
 import './Feedbacks.css';
 import Avatar from '../../src/assets/avatar.png';
+import Avatar2 from '../../src/assets/avatar2.png';
 import Verified from '../../src/assets/verified.svg';
 import MilojaLogo from '../../src/assets/miloja-light.svg';
-
+import RioCostaDoSol from '../../src/assets/rio-costa-do-sol.jpg';
 const Feedbacks = () => {
 
     return (
@@ -20,7 +21,7 @@ const Feedbacks = () => {
                     </div>
                 <div className='feedbacks-cards'>
                     <div className='cards'>
-                        <p>“We’ve been using Untitled to kick start every new project and can’t imagine working without it.”</p>
+                        <p>“O resultado ficou 100 vezes melhor do que imaginei. Entregas sempre antes do prazo e qualidade garantida!”</p>
                         <div className='feedbacks-author'>
                                 <div className='feedbacks-author-avatar'>
                                     <div className='feedbacks-author-image'>
@@ -28,7 +29,7 @@ const Feedbacks = () => {
                                     </div>
                                     <div className='feedbacks-author-info'>
                                         <div className='verified'>
-                                            <p>Alessandra Magalhaes</p>
+                                            <p>Alessandra </p>
                                             <img src={Verified} alt="verified" />
                                         </div>
                                         <div>
@@ -42,24 +43,24 @@ const Feedbacks = () => {
                         </div>
                     </div>
                     <div className='cards'>
-                        <p>“We’ve been using Untitled to kick start every new project and can’t imagine working without it.”</p>
+                        <p>“Serviço sério e de qualidade. Prazos sempre respeitados e entrega completamente fiel ao que eu queria.”</p>
                         <div className='feedbacks-author'>
                                 <div className='feedbacks-author-avatar'>
                                     <div className='feedbacks-author-image'>
-                                        <img src={Avatar} alt="avatar" />
+                                        <img src={Avatar2} alt="avatar2" />
                                     </div>
                                     <div className='feedbacks-author-info'>
                                         <div className='verified'>
-                                            <p>Alessandra Magalhaes</p>
+                                            <p>Leonardo Pereira</p>
                                             <img src={Verified} alt="verified" />
                                         </div>
                                         <div>
-                                            <span>Fundadora e Proprietária</span>
+                                            <span>Fundador e Proprietário</span>
                                         </div>
                                     </div>
                                 </div>
                                 <div className='company-logo'>
-                                    <img src={MilojaLogo} alt="company-logo" />
+                                    <img src={RioCostaDoSol} alt="company-logo" />
                                 </div>
                         </div>
                     </div>

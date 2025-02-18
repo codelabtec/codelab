@@ -23,7 +23,7 @@ const Banner = () => {
                     <div className='main-title'>
                         <h1>Designs que fascinam, tecnologias digitais que transformam.</h1>
                         <p>Transformamos ideias em realidade digital através de designs inspiradores e interfaces intuitivas que conectam pessoas e impulsionam negócios.</p>
-                        <a href="#">Iniciar um projeto</a>
+                        <a href="https://wa.me/5522992877496?text=Olá!%20Vim%20através%20do%20site%20e%20gostaria%20de%20mais%20informações.">Iniciar um projeto</a>
 
                         <div className='mobile-background'>
                             <img src={bannerIllustration} alt="Background em gradiente" />
@@ -31,15 +31,15 @@ const Banner = () => {
                         <div className='social-media-links'>
                                 <div className='icons'>
                                     <img src={FacebookLogo} alt="Logo do facebook" />
-                                    <a href="#">Facebook</a>
+                                    <a href="https://www.facebook.com/">Facebook</a>
                                 </div>
                                 <div className='icons'>
-                                    <img src={InstagramLogo} alt="Logo do facebook" />
-                                    <a href="#">Instagram</a>
+                                    <img src={InstagramLogo} alt="Logo do instagram" />
+                                    <a href="https://www.instagram.com/codelabtec/">Instagram</a>
                                 </div>
                                 <div className='icons linkedin-icon'>
-                                    <img src={LinkedinLogo} alt="Logo do facebook" />
-                                    <a href="#">Linkedin</a>
+                                    <img src={LinkedinLogo} alt="Logo do linkedin" />
+                                    <a href="https://www.linkedin.com/">Linkedin</a>
                                 </div>
                         </div>
                     </div>
