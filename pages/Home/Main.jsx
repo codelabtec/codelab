@@ -13,7 +13,7 @@ function Main() {
   
 
   return (
-    <>
+    <section className='main'>
       <header className='header'>
         <Header />
       </header>
@@ -41,7 +41,8 @@ function Main() {
       <section>
         <Footer />
       </section>
-    </>
+    </section>
+
   )
 }
 
