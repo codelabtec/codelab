@@ -16,9 +16,9 @@ const MenuMobile = ({isOpen, toggleMenu}) => {
                     </div>
                     <div className='menu-mobile-links'>
                         <ul>
-                            <li><a href="#">Serviços</a></li>
+                            {/* <li><a href="#">Serviços</a></li>
                             <li><a href="#">Blog</a></li>
-                            <li><a href="#">Cases de sucesso</a></li>
+                            <li><a href="#">Cases de sucesso</a></li> */}
                         </ul>
                     </div>
                     <div className='menu-mobile-button'>

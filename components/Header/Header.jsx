@@ -28,9 +28,9 @@ const Header = () => {
                     </div>
                     <div className='header-links'>
                         <ul>
-                            <li><a href="#company-text">Serviços</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Cases de sucesso</a></li>
+                            {/* <li><a href="#cases-container">Serviços</a></li> */}
+                            {/* <li><a href="#">Blog</a></li> */}
+                            {/* <li><a href="#">Cases de sucesso</a></li> */}
                         </ul>
                         <div className='header-button'>
                             {/* <Link to="/contact">Iniciar um projeto</Link> */}
