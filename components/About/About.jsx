@@ -1,6 +1,7 @@
 import './About.css';
 import Check from '../../src/assets/check.svg';
 import Gif from '../../src/assets/SceneReduzida.gif';
+import Video from '../../src/assets/Scene.mp4';
 
 const About = () => {
     
@@ -57,12 +58,14 @@ const About = () => {
                     </div>
 
                 </div>
-                <div className='institutional-video'>
-                    <span>Vídeo de Apresentacao</span>
-                    <div className='video'>
-                        <img src={Gif} title="Apresentacao" alt='Gif institucional'></img>
+                <div className="institutional-video">
+                <span>Vídeo de Apresentacao</span>
+                    <div className="video">
+                        <video src={Video} title="Apresentacao" alt="Gif institucional" loop autoPlay muted/>
                     </div>
                 </div>
+
+
             </div>
         </section>
     );

@@ -28,6 +28,7 @@ const Animation = () => {
                     <p>UI DESIGN</p>
                     <img src={Star} alt="ícone da estrela" />
                 </div>
+                
 
                 <div className='animation-text'>
                     <p>UI DESIGN</p>

@@ -234,3 +234,24 @@
     }
 
 }
+
+.institutional-video {
+    display: flex;
+    justify-content: flex-end; /* Alinha à direita */
+    align-items: center; /* Alinha verticalmente ao centro */
+    margin-top: 20px; /* Ajuste a margem conforme necessário */
+  }
+  
+  .video {
+    width: 100%;
+    max-width: 600px; /* Limita o tamanho máximo do vídeo */
+    height: auto;
+    position: relative;
+  }
+  
+  video {
+    width: 100%; /* Faz com que o vídeo ocupe 100% da largura da div pai */
+    height: auto; /* Mantém a proporção do vídeo */
+    border-radius: 8px; /* (Opcional) Para bordas arredondadas no vídeo */
+  }
+  
