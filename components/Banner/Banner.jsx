@@ -26,9 +26,7 @@ const Banner = () => {
                         <p>Transformamos ideias em realidade digital através de designs inspiradores e interfaces intuitivas que conectam pessoas e impulsionam negócios.</p>
                         {/* <Link className='button-contact' to="/contact">Iniciar um projeto</Link> */}
                         <a href="https://wa.me/5522992877496?text=Olá!%20Vim%20através%20do%20site%20e%20gostaria%20de%20mais%20informações." target='_blank' rel="noopener noreferrer">Iniciar um projeto</a>
-                        <div className='mobile-background'>
-                            <img src={bannerIllustration} alt="Background em gradiente" />
-                        </div>
+                       
                         <div className='social-media-links'>
                                 <div className='icons'>
                                     <img src={FacebookLogo} alt="Logo do facebook" />
@@ -42,6 +40,9 @@ const Banner = () => {
                                     <img src={LinkedinLogo} alt="Logo do linkedin" />
                                     <a href="https://www.linkedin.com/" target='_blank' rel='noopener noreferrer'>Linkedin</a>
                                 </div>
+                        </div>
+                        <div className='mobile-background'>
+                            <img src={bannerIllustration} alt="Background em gradiente" />
                         </div>
                     </div>
                     <div className='illustration'>

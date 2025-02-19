@@ -60,7 +60,7 @@ const About = () => {
                 <div className='institutional-video'>
                     <span>Vídeo de Apresentacao</span>
                     <div className='video'>
-                        <iframe src={Gif} title="Apresentacao" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                        <img src={Gif} title="Apresentacao" alt='Gif institucional'></img>
                     </div>
                 </div>
             </div>

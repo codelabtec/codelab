@@ -14,15 +14,34 @@ const MenuMobile = ({isOpen, toggleMenu}) => {
                             <img src={closeIcon} alt="Ícone de fechar o menu" />
                         </button>
                     </div>
-                    <div className='menu-mobile-links'>
+                    {/* <div className='menu-mobile-links'>
                         <ul>
-                            {/* <li><a href="#">Serviços</a></li>
+                            <li><a href="#">Serviços</a></li>
                             <li><a href="#">Blog</a></li>
-                            <li><a href="#">Cases de sucesso</a></li> */}
+                            <li><a href="#">Cases de sucesso</a></li>
                         </ul>
-                    </div>
+                    </div> */}
                     <div className='menu-mobile-button'>
-                    <a href="https://wa.me/5522992877496?text=Olá!%20Vim%20através%20do%20site%20e%20gostaria%20de%20mais%20informações." target='_blank' rel="noopener noreferrer">Iniciar um projeto</a>
+                        <p>Nos envie todos os detalhes sobre o seu projeto e retornaremos o mais rápido possível com uma proposta.</p>
+                        <a href="https://wa.me/5522992877496?text=Olá!%20Vim%20através%20do%20site%20e%20gostaria%20de%20mais%20informações." target='_blank' rel="noopener noreferrer">Iniciar um projeto</a>
+                    </div>
+                    <div className='menu-mobile-site-map'>
+                        <div id='contato' className='site'>
+                            <p>Contato</p>
+                            <span>(21) 99287-7496</span>
+                        </div>
+                        <div className='site'>
+                            <p>E-mail</p>
+                            <span>wearecodelab@gmail.com</span>
+                        </div>
+                        <div className='site'>
+                            <p>Orçamento</p>
+                            <a href="https://wa.me/5522992877496?text=Olá!%20Vim%20através%20do%20site%20e%20gostaria%20de%20mais%20informações." target='_blank' rel="noopener noreferrer">Iniciar um projeto</a>
+                        </div>
+                        <div className='site'>
+                            <p>Legal</p>
+                            <a href="#" target='_blank' rel="noopener noreferrer">Informaões legais</a>
+                        </div>
                     </div>
                 </div>
             </section>
