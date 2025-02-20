@@ -10,7 +10,7 @@ const Process = () => {
             <div className='cases-text'>
                 <div className='cases-title'>
                     <span>NOSSO PROCESSO DE TRABALHO</span>
-                    <h2>Estratégia, design e tecnologia para negócios vencedores.</h2>
+                    <h2>Estratégia,design e tecnologia para negócios vencedores.</h2>
                 </div>
                 <div className='cases-text-support'>
                     <span></span>
