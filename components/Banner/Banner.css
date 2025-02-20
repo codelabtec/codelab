@@ -95,9 +95,8 @@
     text-decoration: none;
     color: var(--text-color-secondary);
     background-color: var(--purple);
-    padding: 0.75rem 0rem;
+    padding: 0.75rem 2rem; /* Aumentei o padding horizontal para deixar o botão mais largo */
     border-radius: 50px;
-    max-width: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -108,7 +107,71 @@
     font-family: 'Switzer', sans-serif;
     z-index: 1;
     position: relative;
-}
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease-in-out;
+    gap: 10px;
+    max-width: 300px; /* Aumentei o max-width para garantir mais largura */
+    width: auto; /* Ajusta automaticamente */
+  }
+  
+  .button-contact .icon {
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .button-contact:hover {
+    transform: scale(1.05);
+    border-color: rgba(255, 255, 255, 0.6);
+  }
+  
+  .button-contact:hover .icon {
+    transform: translate(4px);
+  }
+  
+  .button-contact:hover::before {
+    animation: shine 1.5s ease-out infinite;
+  }
+  
+  .button-contact::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0) 30%,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0) 70%
+    );
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+  }
+  
+  @keyframes shine {
+    0% {
+      left: -100px;
+    }
+  
+    60% {
+      left: 100%;
+    }
+  
+    to {
+      left: 100%;
+    }
+  }
+  
+  .button-contact-black {
+    background-color: #0000;
+    max-width: 300px;
+  }
+  
+  
 
 .main-title a {
     text-decoration: none;
