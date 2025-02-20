@@ -79,6 +79,14 @@
 .header-links ul li a:hover::after {
     width: 100%;
 }
+.header-button {
+    position: relative;
+    overflow: hidden;
+    height: 40px;
+    max-width: 168px;
+    display: flex;
+    align-items: center;
+}
 
 .header-button a {
     border: 1px solid #ffffff;
@@ -86,11 +94,58 @@
     padding: 8px 20px;
     border-radius: 50px;
     text-decoration: none;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    max-width: 168px; /* Aumentei o max-width para garantir mais largura */
+    width: auto; /* Ajusta automaticamente */
 }
+
+.header-button a:hover::before {
+    animation: shine 1.5s ease-out infinite;
+    
+  }
+  
+  .header-button a::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0) 30%,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0) 70%
+    );
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+    
+  }
+  
+  @keyframes shine {
+    0% {
+      left: -100px;
+    }
+  
+    60% {
+      left: 100%;
+    }
+  
+    to {
+      left: 100%;
+    }
+  }
+  
+  .button-contact-black {
+    background-color: #0000;
+    max-width: 300px;
+  }
 
 .header-logo {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .menu-icon-mobile {

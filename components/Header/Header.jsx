@@ -24,7 +24,7 @@ const Header = () => {
                 </div>
                 <div className='main-header'>
                     <div className='header-logo'>
-                        <img src={Logo} alt="Logo do github" />
+                        <img src={Logo} alt="Logo da CodeLab" />
                     </div>
                     <div className='header-links'>
                         <ul>
@@ -34,7 +34,7 @@ const Header = () => {
                         </ul>
                         <div className='header-button'>
                             {/* <Link to="/contact">Iniciar um projeto</Link> */}
-                            <a class="button-contact button-contact-black" href="https://wa.me/5522992877496?text=Olá!%20Vim%20através%20do%20site%20e%20gostaria%20de%20mais%20informações." target='_blank' rel="noopener noreferrer">Iniciar um projeto</a>
+                            <a className="" href="https://wa.me/5522992877496?text=Olá!%20Vim%20através%20do%20site%20e%20gostaria%20de%20mais%20informações." target='_blank' rel="noopener noreferrer">Iniciar um projeto</a>
                         </div>
                     </div>
                     <button onClick={toggleMenu} className='menu-icon-mobile'>

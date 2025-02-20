@@ -3,7 +3,7 @@ import Avatar from '../../src/assets/avatar.png';
 import Avatar2 from '../../src/assets/avatar2.png';
 import Verified from '../../src/assets/verified.svg';
 import MilojaLogo from '../../src/assets/miloja-light.svg';
-import RioCostaDoSol from '../../src/assets/rio-costa-do-sol.jpg';
+import RioCostaDoSol from '../../src/assets/riocosta.svg';
 const Feedbacks = () => {
 
     return (
@@ -73,7 +73,7 @@ const Feedbacks = () => {
                     </div>
                   </div>
                 </div>
-                <div className="company-logo">
+                <div className=" logo-dimention">
                   <img src={RioCostaDoSol} alt="company-logo" />
                 </div>
               </div>

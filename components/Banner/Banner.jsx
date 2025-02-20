@@ -26,7 +26,7 @@ const Banner = () => {
                         <p>Transformamos ideias em realidade digital através de designs inspiradores e interfaces intuitivas que conectam pessoas e impulsionam negócios.</p>
                         {/* <Link className='button-contact' to="/contact">Iniciar um projeto</Link> */}
                         <div>
-                        <a class="button-contact" href="https://wa.me/5522992877496?text=Olá!%20Vim%20através%20do%20site%20e%20gostaria%20de%20mais%20informações." target='_blank' rel="noopener noreferrer">Iniciar um projeto</a>
+                        <a className="button-contact" href="https://wa.me/5522992877496?text=Olá!%20Vim%20através%20do%20site%20e%20gostaria%20de%20mais%20informações." target='_blank' rel="noopener noreferrer">Iniciar um projeto</a>
                        </div>
                         <div className='social-media-links'>
                                 <div className='icons'>
