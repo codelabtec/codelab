@@ -59,11 +59,19 @@ const About = () => {
 
                 </div>
                 <div className="institutional-video">
-                <span>Vídeo de Apresentacao</span>
                     <div className="video">
-                        <video src={Video} title="Apresentacao" alt="Gif institucional" loop autoPlay muted/>
+                        <video 
+                        src={Video} 
+                        title="Apresentacao" 
+                        alt="Gif institucional" 
+                        loop 
+                        autoPlay 
+                        muted 
+                        playsInline
+                        />
                     </div>
                 </div>
+
 
 
             </div>
