@@ -1,3 +1,4 @@
+import { useState } from "react";
 import './Banner.css';
 import bannerIcon from '../../src/assets/banner-icon.svg';
 import bannerIllustration from '../../src/assets/background-banner.png';
@@ -5,17 +6,15 @@ import Vector from '../../src/assets/illustration.svg';
 import FacebookLogo from '../../src/assets/facebook-logo.svg';
 import InstagramLogo from '../../src/assets/instagram-logo.svg';
 import LinkedinLogo from '../../src/assets/linkedin-icon.svg';
-// import { Link } from 'react-router-dom';
 
 const Banner = () => {
+    const [modalOpen, setModalOpen] = useState(false);
 
     return (
         <section className="banner-container">
             <div className='banner-content'>
                 <div className='left-square'>
-                    <div className='left-square-main'>
-                        <span></span>
-                    </div>
+                    <div className='left-square-main'><span></span></div>
                     <div className='left-square-secondary'>
                         <img src={bannerIcon} alt="Ícone de raio" />
                     </div>
@@ -24,23 +23,43 @@ const Banner = () => {
                     <div className='main-title'>
                         <h1>Designs que fascinam, tecnologias digitais que transformam.</h1>
                         <p>Transformamos ideias em realidade digital através de designs inspiradores e interfaces intuitivas que conectam pessoas e impulsionam negócios.</p>
-                        {/* <Link className='button-contact' to="/contact">Iniciar um projeto</Link> */}
+                        <div></div>
+                        {/* Botão que abre o modal */}
                         <div>
-                        <a className="button-contact" href="https://wa.me/5522992877496?text=Olá!%20Vim%20através%20do%20site%20e%20gostaria%20de%20mais%20informações." target='_blank' rel="noopener noreferrer">Iniciar um projeto</a>
-                       </div>
+                            <button className="button-contact" onClick={() => setModalOpen(true)}>
+                                Iniciar um projeto
+                            </button>
+                        </div>
+
+                        {/* Modal com o formulário Brevo */}
+                        {modalOpen && (
+    <div className="modal-overlay">
+        <div className="modal-content">
+            <button className="close-button" onClick={() => setModalOpen(false)}>✖</button>
+            <iframe 
+                src="https://4adf40de.sibforms.com/serve/MUIFAFRYnQEvC1lEBiBwQbnfuh-3jVh7u6E8F3xLjDYh1LVFEW0I9NMmZZIoFPitlpfOkcxdZc3ykvH0FREGzCrnfF_QqDdx5UZii2v2fexzNQRinaq-iPqiFvZ2qnZ4N6kHVqh0bmA1nnH9OVzv6MAqaNBaEk8bc_OuQvWINi6zD_BVUiFK5O_ZN5s5zEB7jM8w6HSebSWQ5bqd" 
+                frameBorder="0" 
+                scrolling="auto" 
+                allowFullScreen>
+            </iframe>
+        </div>
+    </div>
+)}
+
+
                         <div className='social-media-links'>
-                                <div className='icons'>
-                                    <img src={FacebookLogo} alt="Logo do facebook" />
-                                    <a href="https://www.facebook.com/" target='_blank' rel='noopener noreferrer'>Facebook</a>
-                                </div>
-                                <div className='icons'>
-                                    <img src={InstagramLogo} alt="Logo do instagram" />
-                                    <a href="https://www.instagram.com/codelabtec/" target='_blank' rel='noopener noreferrer'>Instagram</a>
-                                </div>
-                                <div className='icons linkedin-icon'>
-                                    <img src={LinkedinLogo} alt="Logo do linkedin" />
-                                    <a href="https://www.linkedin.com/" target='_blank' rel='noopener noreferrer'>Linkedin</a>
-                                </div>
+                            <div className='icons'>
+                                <img src={FacebookLogo} alt="Logo do facebook" />
+                                <a href="https://www.facebook.com/" target='_blank' rel='noopener noreferrer'>Facebook</a>
+                            </div>
+                            <div className='icons'>
+                                <img src={InstagramLogo} alt="Logo do instagram" />
+                                <a href="https://www.instagram.com/codelabtec/" target='_blank' rel='noopener noreferrer'>Instagram</a>
+                            </div>
+                            <div className='icons linkedin-icon'>
+                                <img src={LinkedinLogo} alt="Logo do linkedin" />
+                                <a href="https://www.linkedin.com/" target='_blank' rel='noopener noreferrer'>Linkedin</a>
+                            </div>
                         </div>
                         <div className='mobile-background'>
                             <img src={bannerIllustration} alt="Background em gradiente" />
@@ -52,16 +71,13 @@ const Banner = () => {
                         </div>
                         <img src={bannerIllustration} alt="Background em gradiente" />
                     </div>
-                   
                 </div>
                 <div className='right-square'>
-                    <div className='right-square-main'>
-                    </div>
+                    <div className='right-square-main'></div>
                 </div>
             </div>
         </section>
     );
-
 };
 
 export default Banner;
