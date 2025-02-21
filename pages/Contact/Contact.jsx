@@ -17,16 +17,16 @@ const Contact = () => {
                 
 
             <div className="contact-form w-full max-w-2xl mx-auto">
-                <iframe 
-                    width="600"
-                    height="505"
-                    src="https://4adf40de.sibforms.com/serve/MUIFAI4Cj2LqYtBqYFZATXW-t_j9CGLNvej3bxspRWbj1HqJ4xmWzjhwJ41qwBy_jFz6YTauJNX_FbnUuu7mOiqhGFR-b7AxDnMWqC_5UmjW9ZO_bsBWNh9Nw0yovOXe5f80op7v2h8HePPUtYJUZs5fUjxp2lbb6oB5S26wqBPexQXbZl39h_4W1dc9EWJmtL_f4kB8ehLylQ8M"
-                    className="block mx-auto w-full max-w-[600px]"
-                    frameBorder="0"
-                    scrolling="auto"
-                    allowFullScreen
-                    title="Formulário Brevo"
-                />
+            <iframe 
+                width="540"
+                height="305"
+                src="https://4adf40de.sibforms.com/serve/MUIFALc9I7ZAV361OVn83Mq0kb8hAYzNqwUroFJfT8Ut9e6WFtOgAXcBNCzr04iMIgOrEs3fL6kN6pJUr3W5fC0HCWGqDnGUXHFxOi3Xmv0vdg7-tg-GTMmF3WEOuDototyUqICsQpEfYNxSzlmY3RBokC0i-eR39O1uqo0vB1nHXt_7w-4qTNaDa3zgbdrXRr4z_pq1ULsxw5Xa"
+                className="block mx-auto w-full max-w-[540px]"
+                frameBorder="0"
+                scrolling="auto"
+                allowFullScreen
+                title="Formulário Brevo"
+            />
             </div>
                 
         </section>
