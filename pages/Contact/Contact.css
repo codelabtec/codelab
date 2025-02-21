@@ -17,18 +17,37 @@
     background-color: var(--background-color);   
     width: 50vw;
     border: none;
+    height: 100%;
 }
-
-
 
 .form {
     display: flex;
     
     height: 100%;
     width: 50vh;
-    
 }
 
 .form {
     padding: 0px;
+}
+
+@media screen and (max-width: 790px) {
+    
+    .contact-container {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .contact-form {  
+        width: 100%; 
+        order: 1;
+        height: 95vh;
+    }
+
+    .contact-informations {
+        width: 100%;
+        order: 2;
+        height: 90vh;
+    }
+
 }
