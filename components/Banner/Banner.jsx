@@ -1,4 +1,4 @@
-import { useState } from "react";
+// import { useState } from "react";
 import './Banner.css';
 import bannerIcon from '../../src/assets/banner-icon.svg';
 import bannerIllustration from '../../src/assets/background-banner.png';
@@ -6,9 +6,10 @@ import Vector from '../../src/assets/illustration.svg';
 import FacebookLogo from '../../src/assets/facebook-logo.svg';
 import InstagramLogo from '../../src/assets/instagram-logo.svg';
 import LinkedinLogo from '../../src/assets/linkedin-icon.svg';
+import { Link } from "react-router-dom";
 
 const Banner = () => {
-    const [modalOpen, setModalOpen] = useState(false);
+    // const [modalOpen, setModalOpen] = useState(false);
 
     return (
         <section className="banner-container">
@@ -23,31 +24,29 @@ const Banner = () => {
                     <div className='main-title'>
                         <h1>Designs que fascinam, tecnologias digitais que transformam.</h1>
                         <p>Transformamos ideias em realidade digital através de designs inspiradores e interfaces intuitivas que conectam pessoas e impulsionam negócios.</p>
-                        <div></div>
-                        {/* Botão que abre o modal */}
                         <div>
-                            <button className="button-contact" onClick={() => setModalOpen(true)}>
+                            <Link 
+                                to="/contact" 
+                                className="button-contact">
                                 Iniciar um projeto
-                            </button>
+                            </Link>
                         </div>
 
-                        {/* Modal com o formulário Brevo */}
-                        {modalOpen && (
-    <div className="modal-overlay">
-        <div className="modal-content">
-            <button className="close-button" onClick={() => setModalOpen(false)}>✖</button>
-            <iframe 
-                src="https://4adf40de.sibforms.com/serve/MUIFAFRYnQEvC1lEBiBwQbnfuh-3jVh7u6E8F3xLjDYh1LVFEW0I9NMmZZIoFPitlpfOkcxdZc3ykvH0FREGzCrnfF_QqDdx5UZii2v2fexzNQRinaq-iPqiFvZ2qnZ4N6kHVqh0bmA1nnH9OVzv6MAqaNBaEk8bc_OuQvWINi6zD_BVUiFK5O_ZN5s5zEB7jM8w6HSebSWQ5bqd" 
-                frameBorder="0" 
-                scrolling="auto" 
-                allowFullScreen>
-            </iframe>
-        </div>
-    </div>
-)}
-
-
-                        <div className='social-media-links'>
+                {/* Modal com o formulário Brevo */}
+                {/* {modalOpen && (
+                <div className="modal-overlay">
+                    <div className="modal-content">
+                        <button className="close-button" >✖</button>
+                        <iframe 
+                            src="https://4adf40de.sibforms.com/serve/MUIFAFRYnQEvC1lEBiBwQbnfuh-3jVh7u6E8F3xLjDYh1LVFEW0I9NMmZZIoFPitlpfOkcxdZc3ykvH0FREGzCrnfF_QqDdx5UZii2v2fexzNQRinaq-iPqiFvZ2qnZ4N6kHVqh0bmA1nnH9OVzv6MAqaNBaEk8bc_OuQvWINi6zD_BVUiFK5O_ZN5s5zEB7jM8w6HSebSWQ5bqd" 
+                            frameBorder="0" 
+                            scrolling="auto" 
+                            allowFullScreen>
+                        </iframe>
+                    </div>
+                </div>
+                )} */}
+                <div className='social-media-links'>
                             <div className='icons'>
                                 <img src={FacebookLogo} alt="Logo do facebook" />
                                 <a href="https://www.facebook.com/" target='_blank' rel='noopener noreferrer'>Facebook</a>
