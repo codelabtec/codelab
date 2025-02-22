@@ -81,6 +81,17 @@
     width: 144px;
 }
 
+.logo-dimention {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-dimention img{
+    width: 176px !important;
+}
+
+
 @media screen and (max-width: 1130px) {
     
     .feedbacks-cards {

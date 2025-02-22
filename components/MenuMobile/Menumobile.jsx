@@ -2,7 +2,8 @@ import './Menumobile.css';
 import Logo from '../../src/assets/logo.svg';
 import closeIcon from '../../src/assets/close.svg'
 import PropTypes from 'prop-types';
-
+import { Link } from 'react-router-dom';
+ 
 const MenuMobile = ({isOpen, toggleMenu}) => {
 
         return (
@@ -23,7 +24,11 @@ const MenuMobile = ({isOpen, toggleMenu}) => {
                     </div> */}
                     <div className='menu-mobile-button'>
                         <p>Nos envie todos os detalhes sobre o seu projeto e retornaremos o mais rápido possível com uma proposta.</p>
-                        <a href="https://wa.me/5522992877496?text=Olá!%20Vim%20através%20do%20site%20e%20gostaria%20de%20mais%20informações." target='_blank' rel="noopener noreferrer">Iniciar um projeto</a>
+                        <Link
+                            className='button-contact' 
+                            to='/contact'>
+                            <button>Iniciar um projeto</button>
+                        </Link>
                     </div>
                     <div className='menu-mobile-site-map'>
                         <div id='contato' className='site'>

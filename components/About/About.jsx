@@ -1,6 +1,6 @@
 import './About.css';
 import Check from '../../src/assets/check.svg';
-import Gif from '../../src/assets/SceneReduzida.gif';
+// import Gif from '../../src/assets/SceneReduzida.gif';
 import Video from '../../src/assets/Scene.mp4';
 
 const About = () => {
