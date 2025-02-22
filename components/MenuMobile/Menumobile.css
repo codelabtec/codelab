@@ -16,16 +16,8 @@
     padding: 0.75rem 0;
 }
 
-.button-contact {
-    min-width: 100%;
-}
 
-.menu-mobile-button button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-}
+
 
 @media screen and (max-width: 768px) {
     
@@ -100,6 +92,13 @@
         gap: 2rem;
     }
 
+    .menu-mobile-button .button-contact button {
+        background-color: transparent;
+        border: none;
+    }
+    
+  
+
     .menu-mobile-button p {
         color: var(--text-color-primary);
         font-size: 1rem;
@@ -108,11 +107,11 @@
         line-height: 150%;
     }
 
-    .menu-mobile-button a {
+    .menu-mobile-button .button-contact {
         
         background-color: var(--purple);
         color: var(--text-color-secondary);
-        width: 100%;
+        min-width: 100%;
         padding: 0.75rem 0;
         border-radius: 50px;
         text-align: center;
