@@ -1,16 +1,42 @@
 import './Contact.css';
-
+import ArrowLeft from '../../src/assets/arrow.svg';
+import LogoLight from '../../src/assets/logo-light.svg';
+import { Link } from 'react-router-dom';
 const Contact = () => {
+
+    const currentYear = new Date().getFullYear();
+
 
     return (
         <section className='contact-container'>
             <div className='contact-informations'>
+                <div className='contact'>
                 <div className='contact-content'>
-                    <h1>Contato</h1>
+                    <Link to='/' className='back-home'>
+                        <button>
+                            <img src={ArrowLeft} alt='voltar para a página inicial'/>
+                            Voltar para a home
+                        </button>
+                    </Link>
+                    <img src={LogoLight} alt='Logo CodeLab' />
+                </div>
+                <div className='contact-text'>
+                    <h1>Adorariamos te ajudar a dar vidas as suas ideias.</h1>
                     <p>Estamos ansiosos para ouvir sua ideia e transformá-la em um projeto incrível. Entre em contato conosco!</p>
                 </div>
+                <div className='contact-info'>
+                    <div className='contact-info-item'>
+                        <h2>Telefone</h2>
+                        <a>(11) 99999-9999</a>
+                    </div>
+                    <div className='contact-info-item'>
+                        <h2>Email</h2>
+                        <a>wearecodelabtec@gmail.com</a>
+                    </div>
+                </div>
+                </div>
                 <div className='copy-right'>
-                    <p>© 2021 CodeLab. Todos os direitos reservados.</p>
+                    <p>© {currentYear} CodeLab. Todos os direitos reservados.</p>
                 </div>
             </div>
             
