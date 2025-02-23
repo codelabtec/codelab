@@ -2,6 +2,7 @@ import './Contact.css';
 import ArrowLeft from '../../src/assets/arrow.svg';
 import LogoLight from '../../src/assets/logo-light.svg';
 import { Link } from 'react-router-dom';
+import ArrowDark from '../../src/assets/arrow-dark.svg';
 const Contact = () => {
 
     const currentYear = new Date().getFullYear();
@@ -39,10 +40,13 @@ const Contact = () => {
                     <p>© {currentYear} CodeLab. Todos os direitos reservados.</p>
                 </div>
             </div>
-            
-                
-
             <div className="contact-form w-full max-w-2xl mx-auto">
+                 <Link to='/' className='back-home'>
+                        <button>
+                            <img src={ArrowDark} alt='voltar para a página inicial'/>
+                            Voltar para a home
+                        </button>
+                 </Link>
             <iframe 
                 width="540"
                 height="305"

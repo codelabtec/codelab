@@ -45,6 +45,7 @@
     width: 50vw;
     border: none;
     height: 97%;
+    
 }
 
 .contact-text {
@@ -113,7 +114,9 @@
     padding: 0px;
 }
 
-
+.contact-form .back-home {
+    display: none;
+}
 
 @media screen and (max-width: 790px) {
     
@@ -131,7 +134,74 @@
     .contact-informations {
         width: 100%;
         order: 2;
-        height: 90vh;
+        height: 100vh;
+        margin-top: 4.5rem;
+    }
+
+    .contact-form .back-home {
+        display: flex;
+        padding: 2rem 48px;
+        background-color: transparent;
+    }
+
+    .contact-content {
+        justify-content: start;
+        gap: 0px;
+    }
+
+    .contact-content .back-home button {
+        display: none;
+    }
+
+    .contact-form .back-home button {
+        background-color: transparent;
+        border: none;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-family: 'Switzer', sans-serif;
+        font-size: 16px;
+        color: var(--background-color-secondary);
+        text-decoration: none;
     }
 
 }
+
+@media screen and (max-width: 960px) {
+
+  .contact-text h1 {
+    font-size: 28px;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .contact-text h1 {
+      font-size: 28px;
+    }
+
+    .contact-informations {
+        background-color: var(--background-color-secondary);
+        height: 100%;
+        width: 100%;
+        order: 2;
+        padding: 48px 40px;
+        color: var(--text-color-secondary);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+  
+  }
+
+  @media screen and (max-width: 360px) {
+
+    
+    .contact-informations {
+        padding: 48px 32px;
+    }
+    
+  
+  }
