@@ -7,6 +7,7 @@ import FacebookLogo from '../../src/assets/facebook-logo.svg';
 import InstagramLogo from '../../src/assets/instagram-logo.svg';
 import LinkedinLogo from '../../src/assets/linkedin-icon.svg';
 import { Link } from "react-router-dom";
+import 'animate.css';
 
 const Banner = () => {
     // const [modalOpen, setModalOpen] = useState(false);
@@ -22,7 +23,7 @@ const Banner = () => {
                 </div>
                 <div className='main-content'>
                     <div className='main-title'>
-                        <h1>Designs que fascinam, tecnologias digitais que transformam.</h1>
+                    <h1 class="animate__animated animate__zoomInDown">Designs que fascinam, tecnologias digitais que transformam.</h1>
                         <p>Transformamos ideias em realidade digital através de designs inspiradores e interfaces intuitivas que conectam pessoas e impulsionam negócios.</p>
                         <div>
                             <Link 
