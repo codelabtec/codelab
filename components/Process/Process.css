@@ -40,17 +40,30 @@
     backdrop-filter: blur(18.545454025268555px);
 }
 
-.process-step-button:first-child {
+/* .process-step-button:first-child {
     border: 1px solid rgba(255, 255, 255, 0.30);
     background: rgba(255, 255, 255, 0.30);
-}
+} */
 
 .process-step-button {
     border-radius: 1rem;
     padding: 1.25rem;
     max-width: 500px;
+    height: 116px;
     min-width: 430px;
     width: 100%;
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
+      
+    
+    
+}
+
+.process-step-text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
 }
 
 .process-step-text .lottie-animation-container {
@@ -110,7 +123,7 @@
         padding: 1.25rem;
         max-width: 100%;
         width: 100%;
-        margin-bottom: 1.5rem;
+        margin-bottom: 4px;
     }
 
     .lottie-animation-container {
