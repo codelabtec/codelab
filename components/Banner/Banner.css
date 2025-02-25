@@ -1,3 +1,11 @@
+.hidden {
+    opacity: 0;
+}
+
+.visible {
+    opacity: 1;
+}
+
 .banner-container {
     background-color: var(--background-color-secondary);
     height: 668px;

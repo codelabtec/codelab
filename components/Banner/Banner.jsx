@@ -1,4 +1,4 @@
-// import { useState } from "react";
+import { useEffect } from "react";
 import './Banner.css';
 import bannerIcon from '../../src/assets/banner-icon.svg';
 import bannerIllustration from '../../src/assets/background-banner.png';
@@ -10,7 +10,18 @@ import { Link } from "react-router-dom";
 import 'animate.css';
 
 const Banner = () => {
-    // const [modalOpen, setModalOpen] = useState(false);
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                    observer.unobserve(entry.target); // Remove a observação após ativar
+                }
+            });
+        }, { threshold: 0.3 }); // Ativa quando 30% do elemento estiver visível
+
+        document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+    }, []);
 
     return (
         <section className="banner-container">
@@ -23,8 +34,12 @@ const Banner = () => {
                 </div>
                 <div className='main-content'>
                     <div className='main-title'>
-                    <h1 class="animate__animated animate__zoomInDown">Designs que fascinam, tecnologias digitais que transformam.</h1>
-                        <p>Transformamos ideias em realidade digital através de designs inspiradores e interfaces intuitivas que conectam pessoas e impulsionam negócios.</p>
+                        <h1 className="animate-on-scroll hidden animate__animated animate__flipInX">
+                            Designs que fascinam, tecnologias digitais que transformam.
+                        </h1>
+                        <p className="animate-on-scroll hidden animate__animated animate__backInUp">
+                            Transformamos ideias em realidade digital através de designs inspiradores e interfaces intuitivas que conectam pessoas e impulsionam negócios.
+                        </p>
                         <div>
                             <Link 
                                 to="/contact" 
@@ -33,21 +48,22 @@ const Banner = () => {
                             </Link>
                         </div>
 
-                {/* Modal com o formulário Brevo */}
-                {/* {modalOpen && (
-                <div className="modal-overlay">
-                    <div className="modal-content">
-                        <button className="close-button" >✖</button>
-                        <iframe 
-                            src="https://4adf40de.sibforms.com/serve/MUIFAFRYnQEvC1lEBiBwQbnfuh-3jVh7u6E8F3xLjDYh1LVFEW0I9NMmZZIoFPitlpfOkcxdZc3ykvH0FREGzCrnfF_QqDdx5UZii2v2fexzNQRinaq-iPqiFvZ2qnZ4N6kHVqh0bmA1nnH9OVzv6MAqaNBaEk8bc_OuQvWINi6zD_BVUiFK5O_ZN5s5zEB7jM8w6HSebSWQ5bqd" 
-                            frameBorder="0" 
-                            scrolling="auto" 
-                            allowFullScreen>
-                        </iframe>
-                    </div>
-                </div>
-                )} */}
-                <div className='social-media-links'>
+                        {/* Modal com o formulário Brevo */}
+                        {/* {modalOpen && (
+                        <div className="modal-overlay">
+                            <div className="modal-content">
+                                <button className="close-button" >✖</button>
+                                <iframe 
+                                    src="https://4adf40de.sibforms.com/serve/MUIFAFRYnQEvC1lEBiBwQbnfuh-3jVh7u6E8F3xLjDYh1LVFEW0I9NMmZZIoFPitlpfOkcxdZc3ykvH0FREGzCrnfF_QqDdx5UZii2v2fexzNQRinaq-iPqiFvZ2qnZ4N6kHVqh0bmA1nnH9OVzv6MAqaNBaEk8bc_OuQvWINi6zD_BVUiFK5O_ZN5s5zEB7jM8w6HSebSWQ5bqd" 
+                                    frameBorder="0" 
+                                    scrolling="auto" 
+                                    allowFullScreen>
+                                </iframe>
+                            </div>
+                        </div>
+                        )} */}
+                        
+                        <div className='social-media-links'>
                             <div className='icons'>
                                 <img src={FacebookLogo} alt="Logo do facebook" />
                                 <a href="https://www.facebook.com/" target='_blank' rel='noopener noreferrer'>Facebook</a>

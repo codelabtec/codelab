@@ -1,3 +1,11 @@
+.hidden {
+    opacity: 0;
+}
+
+.animate__animated {
+    opacity: 1;
+}
+
 .process-container {
     width: 100%;
     margin: 0px;

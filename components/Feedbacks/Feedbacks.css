@@ -1,3 +1,12 @@
+.hidden {
+    opacity: 0;
+}
+
+.animate__animated {
+    opacity: 1;
+}
+
+
 .feedbacks-container {
     width: 100%;
     margin: 0px 0px;

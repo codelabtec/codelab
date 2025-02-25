@@ -1,3 +1,14 @@
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.animate__animated {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+
 .cases-container {
     /* margin: 142px 0px; */
     width: 100%;
