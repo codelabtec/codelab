@@ -1,8 +1,13 @@
 import './Process.css';
 import { useState, useEffect, useRef } from 'react';
+import ImageOne from '../../src/assets/1.png';
+import ImageTwo from '../../src/assets/2.png';
+import ImageThree from '../../src/assets/3.png';
+import ImageFour from '../../src/assets/4.png';
 import 'animate.css';
 
 const Process = () => {
+
     const [activeStep, setActiveStep] = useState(0);
     const titleRef = useRef(null);
 
@@ -11,21 +16,25 @@ const Process = () => {
             title: 'Discovery',
             description: 'Pesquisamos e analisamos todos os requisitos do projeto, garantindo um entendimento completo das necessidades.',
             animationContent: 'Animação de Discovery',
+            image: ImageOne,
         },
         {
             title: 'Design',
             description: 'Web Design Agency Lorem Ipsum 2',
             animationContent: 'Animação de Design',
+            image: ImageTwo,
         },
         {
             title: 'Development',
             description: 'Web Design Agency Lorem Ipsum 3',
             animationContent: 'Animação de Development',
+            image: ImageThree,
         },
         {
             title: 'Delivery',
             description: 'Web Design Agency Lorem Ipsum 4',
             animationContent: 'Animação de Delivery',
+            image: ImageFour,
         },
     ];
 
@@ -55,7 +64,7 @@ const Process = () => {
         if (titleRef.current) observer.observe(titleRef.current);
 
         return () => observer.disconnect();
-    }, []);
+    }, []);     
 
     return (
         <section className='process-container'>
@@ -88,15 +97,13 @@ const Process = () => {
                                 <p>{step.description}</p>
                             </div>
                         ))}
-                        <div className='lottie-animation-container'>
-                            <div className='lottie-animation'>
-                                <h1>Olá</h1>
-                            </div>
-                        </div>
                     </div>
                     <div className='lottie-animation-container'>
                         <div className='lottie-animation'>
-                            <h1>Olá</h1>
+                            <img 
+                                src={stepsData[activeStep].image} 
+                                alt={stepsData[activeStep].title} 
+                            />
                         </div>
                     </div>
                 </div>

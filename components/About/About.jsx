@@ -76,6 +76,7 @@ const About = () => {
                         loop
                         autoPlay
                         muted
+                        className='procect-video'
                         />
 
                         
