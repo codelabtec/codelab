@@ -1,7 +1,10 @@
 import './About.css';
 import Check from '../../src/assets/check.svg';
-import Video from '../../src/assets/Scene.mp4';
+// import Video from '../../src/assets/Scene.mp4';
+// import LottieVideo from '../../src/assets/projects.json';
+import VideoProject from '../../src/assets/projects.mp4';
 import { useEffect, useRef } from 'react';
+// import Lottie from 'lottie-react';
 import 'animate.css';
 
 const About = () => {
@@ -56,7 +59,7 @@ const About = () => {
 
                 <div className="institutional-video">
                     <div className="video">
-                        <video 
+                        {/* <video 
                             src={Video} 
                             title="Apresentacao" 
                             alt="Gif institucional" 
@@ -64,7 +67,18 @@ const About = () => {
                             autoPlay 
                             muted 
                             playsInline
+                        /> */}
+                        <video
+
+                        src={VideoProject}
+                        title="Apresentacao"
+                        alt="Gif institucional"
+                        loop
+                        autoPlay
+                        muted
                         />
+
+                        
                     </div>
                 </div>
             </div>
