@@ -1,13 +1,21 @@
 import './Newsletter.css';
 import { useState } from 'react';
 import axios from 'axios';
+import { useSnackbar } from 'notistack';
+import {CircularProgress } from '@mui/material';
 
 const Newsletter = () => {
+
+    const { enqueueSnackbar } = useSnackbar();
+    const [loading, setLoading] = useState(false);
     const [email, setEmail] = useState('');
     const [status, setStatus] = useState('');
 
     const handleSubmit = async (e) => {
+
         e.preventDefault();
+        setLoading(true);
+
         try {
             const response = await axios.post('https://codelabbackend-g2nh.onrender.com/api/subscribe',
             { email },
@@ -17,12 +25,28 @@ const Newsletter = () => {
                 }
             }
             );
+
+            enqueueSnackbar('Inscrição realizada com sucesso!', 
+                { variant: 'success',
+            });
+
             setStatus(response.data.message);
+
             setEmail('');
+
         } catch (error) {
             const errorMessage = error.response?.data?.message || 'Erro ao realizar inscrição!';
             const brevoMessage = error.response?.data?.error?.message;
             setStatus(`Erro: ${errorMessage || brevoMessage || 'Falha na comunição com a Brevo'}`);
+            
+            
+
+            enqueueSnackbar(status, 
+                { variant: 'error',
+            });   
+
+        } finally {
+            setLoading(false);
         }
     };
 
@@ -44,8 +68,13 @@ const Newsletter = () => {
                     required
                     />
                     
-                    <button type='submit'>Inscreva-se</button>
-                    {status && <p>{status}</p>}
+                    <button disabled={loading}
+                    >
+                        {loading ? (
+                        <CircularProgress size={24} color='white' />
+                        ) : (
+                        'Cadastrar'
+                        )}</button>
                 </div>
             </div>
 

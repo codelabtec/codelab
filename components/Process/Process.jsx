@@ -95,7 +95,9 @@ const Process = () => {
                             >
                                 <h3>{step.title}</h3>
                                 <p>{step.description}</p>
+                              
                             </div>
+                            
                         ))}
                     </div>
                     <div className='lottie-animation-container'>

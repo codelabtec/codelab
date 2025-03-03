@@ -3,6 +3,7 @@ import LogoDark from '../../src/assets/codelab.dark.svg';
 import FacebookLogoDark from '../../src/assets/facebook-dark.svg';
 import InstagramLogoDark from '../../src/assets/instagram-dark.svg';
 import LinkedinLogoDark from '../../src/assets/linkedin-dark.svg';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
 
@@ -27,7 +28,9 @@ const Footer = () => {
                         </div>
                         <div className='link'>
                             <p>Orçamento</p>
-                            <a target='_blank' rel='noopener noreferrer' href="https://wa.me/5522992877496?text=Olá!%20Vim%20através%20do%20site%20e%20gostaria%20de%20mais%20informações.">Iniciar um projeto</a>
+                            <Link to='/contact'>
+                                <a href="https://wa.me/5522992877496?text=Olá!%20Vim%20através%20do%20site%20e%20gostaria%20de%20mais%20informações.">Iniciar um projeto</a>
+                            </Link>
                         </div>
                         <div className='link'>
                             <p>Legal</p>
