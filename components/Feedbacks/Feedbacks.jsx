@@ -5,7 +5,7 @@ import Verified from '../../src/assets/verified.svg';
 import MilojaLogo from '../../src/assets/miloja-light.svg';
 import RioCostaDoSol from '../../src/assets/riocosta.svg';
 import { useEffect, useRef } from 'react';
-// import 'animate.css';
+import 'animate.css';
 
 const Feedbacks = () => {
     const titleRef = useRef(null);
