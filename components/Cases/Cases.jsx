@@ -53,7 +53,7 @@ const Cases = () => {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add("animate__bounceInUp", "animate__animated");
+                    entry.target.classList.add("animate__slideInDown", "animate__animated");
                     observer.unobserve(entry.target);
                 }
             });
@@ -67,10 +67,10 @@ const Cases = () => {
     return (
         <section className='cases-container'>
             <div className='cases-content' ref={containerRef}>
-                <div className='cases-text'>
+                <div ref={titleRef}  className='cases-text hidden'>
                     <div className='cases-title'>
                         <span>NOSSOS CASES</span>
-                        <h2 ref={titleRef} className="hidden">
+                        <h2>
                             Transformando visões em experiências digitais incríveis.
                         </h2>
                     </div>

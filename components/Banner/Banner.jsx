@@ -15,7 +15,7 @@ const Banner = () => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add("visible");
-                    observer.unobserve(entry.target); // Remove a observação após ativar
+                    observer.unobserve(entry.target); 
                 }
             });
         }, { threshold: 0.3 }); // Ativa quando 30% do elemento estiver visível
@@ -34,10 +34,10 @@ const Banner = () => {
                 </div>
                 <div className='main-content'>
                     <div className='main-title'>
-                        <h1 className="animate-on-scroll hidden animate__animated animate__flipInX">
+                        <h1 className="animate-on-scroll hidden animate__animated animate__slideInDown">
                             Designs que fascinam, tecnologias digitais que transformam.
                         </h1>
-                        <p className="animate-on-scroll hidden animate__animated animate__backInUp">
+                        <p className="animate-on-scroll hidden animate__animated animate__slideInUp">
                             Transformamos ideias em realidade digital através de designs inspiradores e interfaces intuitivas que conectam pessoas e impulsionam negócios.
                         </p>
                         <div>

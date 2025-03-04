@@ -34,10 +34,10 @@ const Feedbacks = () => {
     return (
         <section className="feedbacks-container">
             <div className="feedbacks-content">
-                <div className="cases-text">
+                <div ref={titleRef} className="cases-text hidden">
                     <div className="cases-title">
                         <span>FEEDBACK DE CLIENTES</span>
-                        <h2 ref={titleRef} className="hidden">
+                        <h2>
                             Resultados transformadores e sucesso comprovado por nossos parceiros.
                         </h2>
                     </div>

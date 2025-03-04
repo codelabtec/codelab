@@ -55,11 +55,11 @@ const Process = () => {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add("animate__fadeInLeft", "animate__animated");
+                    entry.target.classList.add("animate__fadeInDown", "animate__animated");
                     observer.unobserve(entry.target);
                 }
             });
-        }, { threshold: 0.3 });
+        }, { threshold: 0.5 });
 
         if (titleRef.current) observer.observe(titleRef.current);
 
@@ -69,10 +69,10 @@ const Process = () => {
     return (
         <section className='process-container'>
             <div className='process-content'>
-                <div className='cases-text'>
+                <div ref={titleRef} className='cases-text hidden'>
                     <div className='cases-title'>
                         <span>NOSSO PROCESSO DE TRABALHO</span>
-                        <h2 ref={titleRef} className="hidden">
+                        <h2>
                             Estratégia, design e tecnologia para negócios vencedores.
                         </h2>
                     </div>

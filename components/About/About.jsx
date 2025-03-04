@@ -9,12 +9,13 @@ import 'animate.css';
 
 const About = () => {
     const titleRef = useRef(null);
+    
 
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add("animate__bounceInUp", "animate__animated");
+                    entry.target.classList.add("animate__slideInDown", "animate__animated");
                     observer.unobserve(entry.target); // Evita reativação da animação ao rolar para cima
                 }
             });
@@ -31,8 +32,8 @@ const About = () => {
         <section className='company-container'>
             <div className='company-content'>
                 <div className='company-text'>
-                    <span>Sobre a CodeLab</span>
-                    <h2 ref={titleRef} className="hidden">
+                    <span >Sobre a CodeLab</span>
+                    <h2 ref={titleRef} className='animate-on-scroll hidden'>
                         Estratégia, design e tecnologia para negócios vencedores.
                     </h2>
                     <p>Somos uma agência que transforma ideias em soluções digitais únicas, unindo design criativo, tecnologia de ponta e estratégia para impulsionar marcas e alcançar resultados extraordinários.</p>
