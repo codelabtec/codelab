@@ -103,6 +103,7 @@ const Process = () => {
                     <div className='lottie-animation-container'>
                         <div className='lottie-animation'>
                             <img 
+                                className='lottie-animation-image'
                                 src={stepsData[activeStep].image} 
                                 alt={stepsData[activeStep].title} 
                             />
