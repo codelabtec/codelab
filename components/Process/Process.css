@@ -81,8 +81,7 @@
     min-height: 489px;
     width: 100%;
     border-radius: 12.538px;
-    object-fit: contain;
-    
+    object-fit: contain; 
 }
 
 
@@ -184,6 +183,19 @@
     .process-content {
         gap: 4rem;
     }
+
+    .process-step-button h3 {
+        color: var(--background-color-secondary);
+    }
+
+    .process-step-button p {
+        color: var(--background-color-secondary);
+    }
+
+    .lottie-animation-container .lottie-animation img {
+        min-height: 289px;
+    }
+    
 }
 
 @media screen and (max-width: 350px) {
