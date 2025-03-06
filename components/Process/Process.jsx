@@ -1,9 +1,10 @@
 import './Process.css';
 import { useState, useEffect, useRef } from 'react';
-import ImageOne from '../../src/assets/1.png';
+import ImageOne from '../../src/assets/discovery.svg';
 import ImageTwo from '../../src/assets/2.png';
 import ImageThree from '../../src/assets/3.png';
 import ImageFour from '../../src/assets/4.png';
+// import Ilustration from '../../components/Steps/Ilustration.jsx';
 import 'animate.css';
 
 const Process = () => {

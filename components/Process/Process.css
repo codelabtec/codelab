@@ -78,9 +78,10 @@
 
 .lottie-animation-container .lottie-animation img{
     max-width: 634px;
-    height: 489px;
+    min-height: 489px;
     width: 100%;
     border-radius: 12.538px;
+    object-fit: contain;
     
 }
 

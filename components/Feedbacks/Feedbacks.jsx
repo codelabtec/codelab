@@ -51,7 +51,7 @@ const Feedbacks = () => {
                     </div>
                 </div>
                 <div className="feedbacks-cards">
-                    <div className="cards hidden" ref={el => cardRefs.current[0] = el}>
+                    <div className="cards" >
                         <p>
                             “O resultado ficou 100 vezes melhor do que imaginei. Entregas sempre antes do prazo e qualidade garantida!”
                         </p>
@@ -75,7 +75,7 @@ const Feedbacks = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="cards hidden" ref={el => cardRefs.current[1] = el}>
+                    <div className="cards">
                         <p>
                             “Serviço sério e de qualidade. Prazos sempre respeitados e entrega completamente fiel ao que eu queria.”
                         </p>
