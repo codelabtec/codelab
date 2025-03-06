@@ -1,9 +1,9 @@
 import './Process.css';
 import { useState, useEffect, useRef } from 'react';
 import ImageOne from '../../src/assets/discovery.svg';
-import ImageTwo from '../../src/assets/2.png';
-import ImageThree from '../../src/assets/3.png';
-import ImageFour from '../../src/assets/4.png';
+import ImageTwo from '../../src/assets/1.svg';
+import ImageThree from '../../src/assets/2.svg';
+import ImageFour from '../../src/assets/3.svg';
 // import Ilustration from '../../components/Steps/Ilustration.jsx';
 import 'animate.css';
 
@@ -14,26 +14,26 @@ const Process = () => {
 
     const stepsData = [
         {
-            title: 'Discovery',
-            description: 'Pesquisamos e analisamos todos os requisitos do projeto, garantindo um entendimento completo das necessidades.',
+            title: 'Descoberta',
+            description: 'Identifica necessidades dos usuários. Coleta dados para decisões de design.',
             animationContent: 'Animação de Discovery',
             image: ImageOne,
         },
         {
-            title: 'Design',
-            description: 'Web Design Agency Lorem Ipsum 2',
+            title: 'Ideação',
+            description: 'Propõe múltiplas soluções para problemas. Usa técnicas colaborativas para expandir possibilidades.',
             animationContent: 'Animação de Design',
             image: ImageTwo,
         },
         {
-            title: 'Development',
-            description: 'Web Design Agency Lorem Ipsum 3',
+            title: 'Prototipação',
+            description: 'Cria modelos testáveis. Valida conceitos com usuários reais.',
             animationContent: 'Animação de Development',
             image: ImageThree,
         },
         {
-            title: 'Delivery',
-            description: 'Web Design Agency Lorem Ipsum 4',
+            title: 'Desenvolvimento',
+            description: 'Converte protótipos em código. Implementa interfaces funcionais.',
             animationContent: 'Animação de Delivery',
             image: ImageFour,
         },
