@@ -47,3 +47,8 @@ svg {
 ::-webkit-scrollbar-thumb:hover {
   background: #7321C5;
 }
+
+img, svg {
+    -webkit-user-drag: none;  /* Evita arrastar no Chrome/Safari */
+    user-select: none;        /* Evita seleção no texto/imagem */
+}
