@@ -7,10 +7,26 @@ import Process from '../../components/Process/Process.jsx';
 import Animation from '../../components/Animation/Animation.jsx';
 import Newsletter from '../../components/Newsletter/Newsletter.jsx';
 import Footer from '../../components/Footer/Footer.jsx';
+import { Helmet } from 'react-helmet';
 import './Main.css'
 
 function Main() {
   
+  <Helmet>
+    <title>CodeLab Tecnologia | Transformando Ideias em Soluções Digitais Únicas</title>
+    <meta
+      name="description"
+      content="Agência especializada em desenvolvimento web e mobile, unindo design criativo, tecnologia de ponta e estratégia para impulsionar marcas e gerar resultados mensuráveis para seu negócio."
+    />
+    <meta name="keywords" content="desenvolvimento web, aplicativos, design criativo, tecnologia, soluções digitais, agência digital" />
+    <meta property="og:title" content="CodeLab Tecnologia - Soluções Digitais que Transformam Negócios" />
+    <meta property="og:description" content="Transformamos ideias em soluções digitais únicas com design criativo e tecnologia de ponta para impulsionar sua marca no mercado digital." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://seusite.com/" />
+    <meta property="og:image" content="https://seusite.com/imagens/og-image.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://seusite.com/" />
+  </Helmet>
 
   return (
     <section className='main'>

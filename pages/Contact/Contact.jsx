@@ -3,6 +3,8 @@ import ArrowLeft from '../../src/assets/arrow.svg';
 import LogoLight from '../../src/assets/logo-light.svg';
 import { Link } from 'react-router-dom';
 import ArrowDark from '../../src/assets/arrow-dark.svg';
+
+
 const Contact = () => {
 
     const currentYear = new Date().getFullYear();

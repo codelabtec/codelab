@@ -28,7 +28,7 @@ const Footer = () => {
                         </div>
                         <div className='link'>
                             <p>Orçamento</p>
-                            <Link to='/contact'>
+                            <Link to='/contato'>
                                 <a href="https://wa.me/5522992877496?text=Olá!%20Vim%20através%20do%20site%20e%20gostaria%20de%20mais%20informações.">Iniciar um projeto</a>
                             </Link>
                         </div>

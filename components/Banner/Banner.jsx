@@ -42,7 +42,7 @@ const Banner = () => {
                         </p>
                         <div>
                             <Link 
-                                to="/contact" 
+                                to="/contato" 
                                 className="button-contact">
                                 Iniciar um projeto
                             </Link>

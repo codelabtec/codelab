@@ -33,7 +33,7 @@ const Header = () => {
                             {/* <li><a href="#">Cases de sucesso</a></li> */}
                         </ul>
                         <div className='header-button'>
-                            <Link to="/contact">Iniciar um projeto</Link>
+                            <Link to="/contato">Iniciar um projeto</Link>
                             {/* <a className="" href="https://wa.me/5522992877496?text=Olá!%20Vim%20através%20do%20site%20e%20gostaria%20de%20mais%20informações." target='_blank' rel="noopener noreferrer">Iniciar um projeto</a> */}
                         </div>
                     </div>

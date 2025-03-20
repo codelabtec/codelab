@@ -26,7 +26,7 @@ const MenuMobile = ({isOpen, toggleMenu}) => {
                         <p>Nos envie todos os detalhes sobre o seu projeto e retornaremos o mais rápido possível com uma proposta.</p>
                         <Link
                             className='button-contact' 
-                            to='/contact'>
+                            to='/contato'>
                             <button>Iniciar um projeto</button>
                         </Link>
                     </div>
