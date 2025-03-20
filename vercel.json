@@ -1,8 +1,6 @@
 {
-    "rewrites": [
-      { "source": "/(.*)", "destination": "/" }
-    ],
     "redirects": [
+      { "source": "/(.*)", "destination": "/" },
       {
         "source": "https://codelabtec.online/:path*",
         "destination": "https://codelabtec.com/:path*",
