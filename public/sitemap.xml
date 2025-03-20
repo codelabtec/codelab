@@ -8,9 +8,18 @@
 
 
 <url>
-  <loc>https://www.codelabtec.com/</loc>
-  <lastmod>2025-03-12T18:48:22+00:00</lastmod>
-</url>
+    <loc>https://www.codelabtec.com/</loc>
+    <lastmod>2025-03-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://www.codelabtec.com/contato</loc>
+    <lastmod>2025-03-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
 
 </urlset>
