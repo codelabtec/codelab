@@ -3,15 +3,35 @@ import ArrowLeft from '../../src/assets/arrow.svg';
 import LogoLight from '../../src/assets/logo-light.svg';
 import { Link } from 'react-router-dom';
 import ArrowDark from '../../src/assets/arrow-dark.svg';
+import { Helmet } from 'react-helmet';
 
 
 const Contact = () => {
+
+    
 
     const currentYear = new Date().getFullYear();
 
 
     return (
         <section className='contact-container'>
+
+            <Helmet>
+                    <title>Entre em Contato | CodeLab Tecnologia - Soluções Digitais Personalizadas</title>
+                    <meta
+                        name="description"
+                        content="Entre em contato com a CodeLab Tecnologia e descubra como podemos transformar suas ideias em soluções digitais inovadoras. Solicite um orçamento ou agende uma consultoria gratuita."
+                    />
+                    <meta name="keywords" content="contato CodeLab, orçamento desenvolvimento, consultoria tecnológica, desenvolvimento web, agência digital, atendimento personalizado" />
+                    <meta property="og:title" content="Fale com a CodeLab Tecnologia - Transforme sua Ideia em Realidade" />
+                    <meta property="og:description" content="Entre em contato hoje mesmo para discutir seu projeto. Nossa equipe está pronta para transformar sua visão em uma solução digital inovadora e sob medida." />
+                    <meta property="og:type" content="website" />
+                    <meta property="og:url" content="https://www.codelabtec.com/contato" />
+                    <meta property="og:image" content="https://www.codelabtec.com/thumb.png" />
+                    <meta name="twitter:card" content="summary_large_image" />
+                    <link rel="canonical" href="https://www.codelabtec.com/contato" />
+            </Helmet>
+
             <div className='contact-informations'>
                 <div className='contact'>
                 <div className='contact-content'>
