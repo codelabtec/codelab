@@ -8,10 +8,7 @@ import { Helmet } from 'react-helmet';
 
 const Contact = () => {
 
-    
-
     const currentYear = new Date().getFullYear();
-
 
     return (
         <section className='contact-container'>
@@ -22,7 +19,7 @@ const Contact = () => {
                         name="description"
                         content="Entre em contato com a CodeLab Tecnologia e descubra como podemos transformar suas ideias em soluções digitais inovadoras. Solicite um orçamento ou agende uma consultoria gratuita."
                     />
-                    <meta name="keywords" content="contato CodeLab, orçamento desenvolvimento, consultoria tecnológica, desenvolvimento web, agência digital, atendimento personalizado" />
+                    <meta name="keywords" content="contato desenvolvedor web, orçamento aplicativo mobile, contratar design UI/UX, solicitar projeto tecnologia, desenvolvimento personalizado, contato CodeLab" />
                     <meta property="og:title" content="Fale com a CodeLab Tecnologia - Transforme sua Ideia em Realidade" />
                     <meta property="og:description" content="Entre em contato hoje mesmo para discutir seu projeto. Nossa equipe está pronta para transformar sua visão em uma solução digital inovadora e sob medida." />
                     <meta property="og:type" content="website" />
@@ -30,6 +27,50 @@ const Contact = () => {
                     <meta property="og:image" content="https://www.codelabtec.com/thumb.png" />
                     <meta name="twitter:card" content="summary_large_image" />
                     <link rel="canonical" href="https://www.codelabtec.com/contato" />
+
+                    <script type="application/ld+json">
+                        {JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "Organization",
+                        "name": "CodeLab Tecnologia",
+                        "url": "https://www.codelabtec.com",
+                        "logo": "https://www.codelabtec.com/../../src/assets/logo.svg'",
+                        "description": "Agência especializada em desenvolvimento web e mobile, unindo design criativo, tecnologia de ponta e estratégia para impulsionar marcas e gerar resultados mensuráveis para seu negócio.",
+                        "sameAs": [
+                            "https://www.instagram.com/codelabtec",
+                        ],
+                        "contactPoint": {
+                            "@type": "ContactPoint",
+                            "telephone": "+5522992877496",
+                            "contactType": "customer service",
+                            "email": "wearecodelab@gmail.com",
+                            "availableLanguage": "Portuguese"
+                        },
+                        "address": {
+                            "@type": "PostalAddress",
+                            "addressLocality": "Rio de Janeiro",
+                            "addressRegion": "RJ",
+                            "addressCountry": "BR"
+                        },
+                        "offers": [
+                            {
+                            "@type": "Offer",
+                            "name": "Desenvolvimento Web",
+                            "description": "Criação de sites e sistemas web personalizados"
+                            },
+                            {
+                            "@type": "Offer",
+                            "name": "Desenvolvimento Mobile",
+                            "description": "Aplicativos para Android e iOS"
+                            },
+                            {
+                            "@type": "Offer",
+                            "name": "Design de Interface",
+                            "description": "UI/UX design para produtos digitais"
+                            }
+                        ]
+                        })}
+                    </script>
             </Helmet>
 
             <div className='contact-informations'>
