@@ -1,14 +1,16 @@
 {
     "rewrites": [
-      { "source": "/(.*)", "destination": "/" },
+      { "source": "/(.*)", "destination": "/" }
+    ],
+    "redirects": [
       {
-        "source": "https://codelabtech.online/:path*",
-        "destination": "https://codelabtech.com/:path*",
+        "source": "https://codelabtec.online/:path*",
+        "destination": "https://codelabtec.com/:path*",
         "permanent": true
       },
       {
-        "source": "http://codelabtech.online/:path*",
-        "destination": "https://codelabtech.com/:path*",
+        "source": "http://codelabtec.online/:path*",
+        "destination": "https://codelabtec.com/:path*",
         "permanent": true
       }
     ]
