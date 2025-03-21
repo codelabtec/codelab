@@ -14,6 +14,8 @@ const Contact = () => {
         <section className='contact-container'>
 
             <Helmet>
+
+                <link rel="canonical" href="https://www.codelabtec.com/contato" />
                     
                 <title>Fale Conosco — CodeLab Tecnologia</title>
                 <meta

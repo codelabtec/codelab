@@ -15,6 +15,9 @@ function Main() {
   return (
     <section className="main">
       <Helmet>
+
+      <link rel="canonical" href="https://www.codelabtec.com/" />
+
         <title>
           Bem-vindo(a) à CodeLab Tecnologia — Soluções Criativas para Você
         </title>
