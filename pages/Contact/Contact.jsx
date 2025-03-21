@@ -14,20 +14,16 @@ const Contact = () => {
         <section className='contact-container'>
 
             <Helmet>
-                    <title>Entre em Contato | CodeLab Tecnologia - Soluções Digitais Personalizadas</title>
-                    <meta
-                        name="description"
-                        content="Entre em contato com a CodeLab Tecnologia e descubra como podemos transformar suas ideias em soluções digitais inovadoras. Solicite um orçamento ou agende uma consultoria gratuita."
-                    />
-                    <meta name="keywords" content="contato desenvolvedor web, orçamento aplicativo mobile, contratar design UI/UX, solicitar projeto tecnologia, desenvolvimento personalizado, contato CodeLab" />
-                    <meta property="og:title" content="Fale com a CodeLab Tecnologia - Transforme sua Ideia em Realidade" />
-                    <meta property="og:description" content="Entre em contato hoje mesmo para discutir seu projeto. Nossa equipe está pronta para transformar sua visão em uma solução digital inovadora e sob medida." />
-                    <meta property="og:type" content="website" />
-                    <meta property="og:url" content="https://www.codelabtec.com/contato" />
-                    <meta property="og:image" content="https://www.codelabtec.com/thumb.png" />
-                    <meta name="twitter:card" content="summary_large_image" />
-                    <link rel="canonical" href="https://www.codelabtec.com/contato" />
-
+                    
+                <title>Fale Conosco — CodeLab Tecnologia</title>
+                <meta
+                    name="description"
+                    content="Entre em contato com a equipe da CodeLab Tecnologia. Tire suas dúvidas, solicite orçamentos e conte com nosso suporte especializado."
+                />
+                <meta
+                    name="keywords"
+                    content="CodeLab Tecnologia, codelabtec, saas, software, desenvolvimento full-stack, aplicativos, react native, criação de sites, rio de janeiro, apps, app, criar site gratis"
+                />
                     <script type="application/ld+json">
                         {JSON.stringify({
                         "@context": "https://schema.org",
