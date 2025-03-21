@@ -6,17 +6,22 @@ import Feedbacks from '../../components/Feedbacks/Feedbacks';
 import Process from '../../components/Process/Process.jsx';
 import Animation from '../../components/Animation/Animation.jsx';
 import Newsletter from '../../components/Newsletter/Newsletter.jsx';
-import Footer from '../../components/Footer/Footer.jsx';
+import Footer from '../../components/Footer/Footer.jsx'
+import { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import './Main.css'
 
 function Main() {
+
+  useEffect(() => {
+    if (window.location.search.includes('fbclid=')) {
+      window.history.replaceState({}, document.title, window.location.pathname);
+    }
+  }, []);
   
   return (
     <section className="main">
       <Helmet>
-
-      <link rel="canonical" href="https://www.codelabtec.com/" />
 
         <title>
           Bem-vindo(a) à CodeLab Tecnologia — Soluções Criativas para Você
