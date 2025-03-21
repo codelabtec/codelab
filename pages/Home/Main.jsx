@@ -14,9 +14,14 @@ import './Main.css'
 function Main() {
 
   useEffect(() => {
-    if (window.location.search.includes('fbclid=')) {
-      window.history.replaceState({}, document.title, window.location.pathname);
-    }
+    // Importante: dê tempo para os pixels e rastreadores carregarem primeiro
+    const timeoutId = setTimeout(() => {
+      if (window.location.search.includes('fbclid=')) {
+        window.history.replaceState({}, document.title, window.location.pathname);
+      }
+    }, 1500); // Espere 1.5 segundos
+    
+    return () => clearTimeout(timeoutId);
   }, []);
   
   return (
